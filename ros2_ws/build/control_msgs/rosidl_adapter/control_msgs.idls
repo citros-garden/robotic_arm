@@ -1,0 +1,15 @@
+/workspaces/citros_example_robotic_arm/ros2_ws/build/control_msgs/rosidl_adapter/control_msgs:msg/DynamicJointState.idl
+/workspaces/citros_example_robotic_arm/ros2_ws/build/control_msgs/rosidl_adapter/control_msgs:msg/GripperCommand.idl
+/workspaces/citros_example_robotic_arm/ros2_ws/build/control_msgs/rosidl_adapter/control_msgs:msg/InterfaceValue.idl
+/workspaces/citros_example_robotic_arm/ros2_ws/build/control_msgs/rosidl_adapter/control_msgs:msg/JointControllerState.idl
+/workspaces/citros_example_robotic_arm/ros2_ws/build/control_msgs/rosidl_adapter/control_msgs:msg/JointJog.idl
+/workspaces/citros_example_robotic_arm/ros2_ws/build/control_msgs/rosidl_adapter/control_msgs:msg/JointTolerance.idl
+/workspaces/citros_example_robotic_arm/ros2_ws/build/control_msgs/rosidl_adapter/control_msgs:msg/JointTrajectoryControllerState.idl
+/workspaces/citros_example_robotic_arm/ros2_ws/build/control_msgs/rosidl_adapter/control_msgs:msg/PidState.idl
+/workspaces/citros_example_robotic_arm/ros2_ws/build/control_msgs/rosidl_adapter/control_msgs:srv/QueryCalibrationState.idl
+/workspaces/citros_example_robotic_arm/ros2_ws/build/control_msgs/rosidl_adapter/control_msgs:srv/QueryTrajectoryState.idl
+/workspaces/citros_example_robotic_arm/ros2_ws/build/control_msgs/rosidl_adapter/control_msgs:action/FollowJointTrajectory.idl
+/workspaces/citros_example_robotic_arm/ros2_ws/build/control_msgs/rosidl_adapter/control_msgs:action/GripperCommand.idl
+/workspaces/citros_example_robotic_arm/ros2_ws/build/control_msgs/rosidl_adapter/control_msgs:action/JointTrajectory.idl
+/workspaces/citros_example_robotic_arm/ros2_ws/build/control_msgs/rosidl_adapter/control_msgs:action/PointHead.idl
+/workspaces/citros_example_robotic_arm/ros2_ws/build/control_msgs/rosidl_adapter/control_msgs:action/SingleJointPosition.idl

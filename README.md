@@ -19,4 +19,10 @@ The robotic arm model and configuration was imported from [franka github page](h
         colcon build
         source install/local_setup.bash
 
+# Run
+
+Run visualization with:
+
+        ros2 launch franka_description visualize_franka.launch.py load_gripper:=true
+
 

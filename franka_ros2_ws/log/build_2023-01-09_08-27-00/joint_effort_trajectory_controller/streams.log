@@ -1,0 +1,82 @@
+[0.015s] Invoking command in '/workspaces/citros_example_robotic_arm/franka_ros2_ws/build/joint_effort_trajectory_controller': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /workspaces/citros_example_robotic_arm/franka_ros2_ws/src/franka_ros2/joint_effort_trajectory_controller -DCMAKE_INSTALL_PREFIX=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller
+[0.050s] -- The C compiler identification is GNU 9.4.0
+[0.084s] -- The CXX compiler identification is GNU 9.4.0
+[0.087s] -- Check for working C compiler: /usr/bin/cc
+[0.130s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.131s] -- Detecting C compiler ABI info
+[0.174s] -- Detecting C compiler ABI info - done
+[0.181s] -- Detecting C compile features
+[0.182s] -- Detecting C compile features - done
+[0.183s] -- Check for working CXX compiler: /usr/bin/c++
+[0.234s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.236s] -- Detecting CXX compiler ABI info
+[0.285s] -- Detecting CXX compiler ABI info - done
+[0.293s] -- Detecting CXX compile features
+[0.293s] -- Detecting CXX compile features - done
+[0.295s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.312s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.312s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.430s] -- Found angles: 1.12.6 (/opt/ros/foxy/share/angles/cmake)
+[0.432s] -- Found controller_interface: 0.11.0 (/opt/ros/foxy/share/controller_interface/cmake)
+[0.460s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.465s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.522s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.547s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.609s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.990s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.991s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.991s] -- Looking for pthread.h
+[1.039s] -- Looking for pthread.h - found
+[1.039s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.087s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.087s] -- Looking for pthread_create in pthreads
+[1.126s] -- Looking for pthread_create in pthreads - not found
+[1.126s] -- Looking for pthread_create in pthread
+[1.172s] -- Looking for pthread_create in pthread - found
+[1.173s] -- Found Threads: TRUE  
+[1.349s] -- Found realtime_tools: 2.2.0 (/opt/ros/foxy/share/realtime_tools/cmake)
+[1.376s] -- Found control_toolbox: 2.1.1 (/opt/ros/foxy/share/control_toolbox/cmake)
+[1.483s] -- Configuring done
+[1.498s] -- Generating done
+[1.499s] -- Build files have been written to: /workspaces/citros_example_robotic_arm/franka_ros2_ws/build/joint_effort_trajectory_controller
+[1.506s] Invoked command in '/workspaces/citros_example_robotic_arm/franka_ros2_ws/build/joint_effort_trajectory_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /workspaces/citros_example_robotic_arm/franka_ros2_ws/src/franka_ros2/joint_effort_trajectory_controller -DCMAKE_INSTALL_PREFIX=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller
+[1.508s] Invoking command in '/workspaces/citros_example_robotic_arm/franka_ros2_ws/build/joint_effort_trajectory_controller': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /workspaces/citros_example_robotic_arm/franka_ros2_ws/build/joint_effort_trajectory_controller -- -j20 -l20
+[1.536s] [35m[1mScanning dependencies of target joint_effort_trajectory_controller[0m
+[1.565s] [ 33%] [32mBuilding CXX object CMakeFiles/joint_effort_trajectory_controller.dir/src/trajectory.cpp.o[0m
+[1.566s] [ 66%] [32mBuilding CXX object CMakeFiles/joint_effort_trajectory_controller.dir/src/joint_trajectory_controller.cpp.o[0m
+[6.374s] [100%] [32m[1mLinking CXX shared library libjoint_effort_trajectory_controller.so[0m
+[6.647s] [100%] Built target joint_effort_trajectory_controller
+[6.656s] Invoked command in '/workspaces/citros_example_robotic_arm/franka_ros2_ws/build/joint_effort_trajectory_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /workspaces/citros_example_robotic_arm/franka_ros2_ws/build/joint_effort_trajectory_controller -- -j20 -l20
+[6.674s] Invoking command in '/workspaces/citros_example_robotic_arm/franka_ros2_ws/build/joint_effort_trajectory_controller': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /workspaces/citros_example_robotic_arm/franka_ros2_ws/build/joint_effort_trajectory_controller
+[6.678s] -- Install configuration: ""
+[6.678s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/share/joint_effort_trajectory_controller/joint_trajectory_plugin.xml
+[6.678s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/include
+[6.678s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/include/joint_effort_trajectory_controller
+[6.678s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/include/joint_effort_trajectory_controller/tolerances.hpp
+[6.678s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/include/joint_effort_trajectory_controller/trajectory.hpp
+[6.678s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/include/joint_effort_trajectory_controller/visibility_control.h
+[6.679s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/include/joint_effort_trajectory_controller/joint_trajectory_controller.hpp
+[6.679s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/lib/libjoint_effort_trajectory_controller.so
+[6.682s] -- Set runtime path of "/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/lib/libjoint_effort_trajectory_controller.so" to ""
+[6.682s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/share/joint_effort_trajectory_controller/environment/library_path.sh
+[6.682s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/share/joint_effort_trajectory_controller/environment/library_path.dsv
+[6.682s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/share/ament_index/resource_index/package_run_dependencies/joint_effort_trajectory_controller
+[6.682s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/share/ament_index/resource_index/parent_prefix_path/joint_effort_trajectory_controller
+[6.682s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/share/joint_effort_trajectory_controller/environment/ament_prefix_path.sh
+[6.682s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/share/joint_effort_trajectory_controller/environment/ament_prefix_path.dsv
+[6.682s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/share/joint_effort_trajectory_controller/environment/path.sh
+[6.682s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/share/joint_effort_trajectory_controller/environment/path.dsv
+[6.683s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/share/joint_effort_trajectory_controller/local_setup.bash
+[6.683s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/share/joint_effort_trajectory_controller/local_setup.sh
+[6.683s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/share/joint_effort_trajectory_controller/local_setup.zsh
+[6.683s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/share/joint_effort_trajectory_controller/local_setup.dsv
+[6.683s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/share/joint_effort_trajectory_controller/package.dsv
+[6.683s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/share/ament_index/resource_index/packages/joint_effort_trajectory_controller
+[6.683s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/share/ament_index/resource_index/controller_interface__pluginlib__plugin/joint_effort_trajectory_controller
+[6.683s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/share/joint_effort_trajectory_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.683s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/share/joint_effort_trajectory_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.683s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/share/joint_effort_trajectory_controller/cmake/ament_cmake_export_libraries-extras.cmake
+[6.683s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/share/joint_effort_trajectory_controller/cmake/joint_effort_trajectory_controllerConfig.cmake
+[6.683s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/share/joint_effort_trajectory_controller/cmake/joint_effort_trajectory_controllerConfig-version.cmake
+[6.684s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/joint_effort_trajectory_controller/share/joint_effort_trajectory_controller/package.xml
+[6.686s] Invoked command in '/workspaces/citros_example_robotic_arm/franka_ros2_ws/build/joint_effort_trajectory_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /workspaces/citros_example_robotic_arm/franka_ros2_ws/build/joint_effort_trajectory_controller

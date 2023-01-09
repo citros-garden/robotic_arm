@@ -1,0 +1,90 @@
+[0.012s] Invoking command in '/workspaces/citros_example_robotic_arm/franka_ros2_ws/build/franka_example_controllers': AMENT_PREFIX_PATH=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/citros_example_robotic_arm/franka_ros2_ws/src/franka_ros2/franka_example_controllers -DCMAKE_INSTALL_PREFIX=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers
+[0.045s] -- The C compiler identification is GNU 9.4.0
+[0.079s] -- The CXX compiler identification is GNU 9.4.0
+[0.082s] -- Check for working C compiler: /usr/bin/cc
+[0.123s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.124s] -- Detecting C compiler ABI info
+[0.169s] -- Detecting C compiler ABI info - done
+[0.178s] -- Detecting C compile features
+[0.178s] -- Detecting C compile features - done
+[0.179s] -- Check for working CXX compiler: /usr/bin/c++
+[0.230s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.231s] -- Detecting CXX compiler ABI info
+[0.280s] -- Detecting CXX compiler ABI info - done
+[0.288s] -- Detecting CXX compile features
+[0.288s] -- Detecting CXX compile features - done
+[0.290s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.307s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.307s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.431s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.463s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.468s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.528s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.553s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.617s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.656s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.657s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.658s] -- Looking for pthread.h
+[0.703s] -- Looking for pthread.h - found
+[0.703s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.749s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.750s] -- Looking for pthread_create in pthreads
+[0.788s] -- Looking for pthread_create in pthreads - not found
+[0.788s] -- Looking for pthread_create in pthread
+[0.833s] -- Looking for pthread_create in pthread - found
+[0.834s] -- Found Threads: TRUE  
+[0.941s] -- Found controller_interface: 0.11.0 (/opt/ros/foxy/share/controller_interface/cmake)
+[1.344s] -- Found franka_msgs: 0.0.0 (/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_msgs/share/franka_msgs/cmake)
+[1.428s] -- Found ament_cmake_clang_format: 0.9.7 (/opt/ros/foxy/share/ament_cmake_clang_format/cmake)
+[1.429s] -- Found ament_cmake_copyright: 0.9.7 (/opt/ros/foxy/share/ament_cmake_copyright/cmake)
+[1.431s] -- Found ament_cmake_cppcheck: 0.9.7 (/opt/ros/foxy/share/ament_cmake_cppcheck/cmake)
+[1.432s] -- Found ament_cmake_flake8: 0.9.7 (/opt/ros/foxy/share/ament_cmake_flake8/cmake)
+[1.434s] -- Found ament_cmake_lint_cmake: 0.9.7 (/opt/ros/foxy/share/ament_cmake_lint_cmake/cmake)
+[1.435s] -- Found ament_cmake_pep257: 0.9.7 (/opt/ros/foxy/share/ament_cmake_pep257/cmake)
+[1.437s] -- Found ament_cmake_xmllint: 0.9.7 (/opt/ros/foxy/share/ament_cmake_xmllint/cmake)
+[1.481s] -- Configuring done
+[1.495s] -- Generating done
+[1.497s] -- Build files have been written to: /workspaces/citros_example_robotic_arm/franka_ros2_ws/build/franka_example_controllers
+[1.505s] Invoked command in '/workspaces/citros_example_robotic_arm/franka_ros2_ws/build/franka_example_controllers' returned '0': AMENT_PREFIX_PATH=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/citros_example_robotic_arm/franka_ros2_ws/src/franka_ros2/franka_example_controllers -DCMAKE_INSTALL_PREFIX=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers
+[1.506s] Invoking command in '/workspaces/citros_example_robotic_arm/franka_ros2_ws/build/franka_example_controllers': AMENT_PREFIX_PATH=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/citros_example_robotic_arm/franka_ros2_ws/build/franka_example_controllers -- -j20 -l20
+[1.536s] [35m[1mScanning dependencies of target franka_example_controllers[0m
+[1.599s] [ 20%] [32mBuilding CXX object CMakeFiles/franka_example_controllers.dir/src/gravity_compensation_example_controller.cpp.o[0m
+[1.608s] [ 60%] [32mBuilding CXX object CMakeFiles/franka_example_controllers.dir/src/move_to_start_example_controller.cpp.o[0m
+[1.609s] [ 60%] [32mBuilding CXX object CMakeFiles/franka_example_controllers.dir/src/joint_impedance_example_controller.cpp.o[0m
+[1.609s] [ 80%] [32mBuilding CXX object CMakeFiles/franka_example_controllers.dir/src/motion_generator.cpp.o[0m
+[3.878s] [100%] [32m[1mLinking CXX shared library libfranka_example_controllers.so[0m
+[4.014s] [100%] Built target franka_example_controllers
+[4.022s] Invoked command in '/workspaces/citros_example_robotic_arm/franka_ros2_ws/build/franka_example_controllers' returned '0': AMENT_PREFIX_PATH=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/citros_example_robotic_arm/franka_ros2_ws/build/franka_example_controllers -- -j20 -l20
+[4.044s] Invoking command in '/workspaces/citros_example_robotic_arm/franka_ros2_ws/build/franka_example_controllers': AMENT_PREFIX_PATH=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/citros_example_robotic_arm/franka_ros2_ws/build/franka_example_controllers
+[4.049s] -- Install configuration: ""
+[4.050s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/share/franka_example_controllers/franka_example_controllers.xml
+[4.050s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/lib/libfranka_example_controllers.so
+[4.051s] -- Set runtime path of "/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/lib/libfranka_example_controllers.so" to ""
+[4.051s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/include
+[4.051s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/include/franka_example_controllers
+[4.051s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/include/franka_example_controllers/move_to_start_example_controller.hpp
+[4.051s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/include/franka_example_controllers/motion_generator.hpp
+[4.051s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/include/franka_example_controllers/gravity_compensation_example_controller.hpp
+[4.051s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/include/franka_example_controllers/joint_impedance_example_controller.hpp
+[4.051s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/share/franka_example_controllers/environment/library_path.sh
+[4.051s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/share/franka_example_controllers/environment/library_path.dsv
+[4.051s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/share/ament_index/resource_index/package_run_dependencies/franka_example_controllers
+[4.051s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/share/ament_index/resource_index/parent_prefix_path/franka_example_controllers
+[4.051s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/share/franka_example_controllers/environment/ament_prefix_path.sh
+[4.051s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/share/franka_example_controllers/environment/ament_prefix_path.dsv
+[4.051s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/share/franka_example_controllers/environment/path.sh
+[4.051s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/share/franka_example_controllers/environment/path.dsv
+[4.051s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/share/franka_example_controllers/local_setup.bash
+[4.051s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/share/franka_example_controllers/local_setup.sh
+[4.051s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/share/franka_example_controllers/local_setup.zsh
+[4.051s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/share/franka_example_controllers/local_setup.dsv
+[4.051s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/share/franka_example_controllers/package.dsv
+[4.051s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/share/ament_index/resource_index/packages/franka_example_controllers
+[4.051s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/share/ament_index/resource_index/controller_interface__pluginlib__plugin/franka_example_controllers
+[4.052s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/share/franka_example_controllers/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.052s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/share/franka_example_controllers/cmake/ament_cmake_export_libraries-extras.cmake
+[4.052s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/share/franka_example_controllers/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.052s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/share/franka_example_controllers/cmake/franka_example_controllersConfig.cmake
+[4.052s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/share/franka_example_controllers/cmake/franka_example_controllersConfig-version.cmake
+[4.052s] -- Installing: /workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_example_controllers/share/franka_example_controllers/package.xml
+[4.055s] Invoked command in '/workspaces/citros_example_robotic_arm/franka_ros2_ws/build/franka_example_controllers' returned '0': AMENT_PREFIX_PATH=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/citros_example_robotic_arm/franka_ros2_ws/install/franka_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/citros_example_robotic_arm/franka_ros2_ws/build/franka_example_controllers

@@ -1,0 +1,56 @@
+[0.658s] Invoking command in '/workspaces/citros_example_robotic_arm/ros2_ws/src/robotic_arm_environment/my_environment_pkg': PYTHONPATH=/workspaces/citros_example_robotic_arm/ros2_ws/build/my_environment_pkg/prefix_override:/workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/my_environment_pkg build --build-base /workspaces/citros_example_robotic_arm/ros2_ws/build/my_environment_pkg/build install --record /workspaces/citros_example_robotic_arm/ros2_ws/build/my_environment_pkg/install.log --install-scripts $base/lib/my_environment_pkg --single-version-externally-managed
+[0.774s] running egg_info
+[0.774s] creating ../../../build/my_environment_pkg/my_environment_pkg.egg-info
+[0.775s] writing ../../../build/my_environment_pkg/my_environment_pkg.egg-info/PKG-INFO
+[0.775s] writing dependency_links to ../../../build/my_environment_pkg/my_environment_pkg.egg-info/dependency_links.txt
+[0.775s] writing entry points to ../../../build/my_environment_pkg/my_environment_pkg.egg-info/entry_points.txt
+[0.775s] writing requirements to ../../../build/my_environment_pkg/my_environment_pkg.egg-info/requires.txt
+[0.776s] writing top-level names to ../../../build/my_environment_pkg/my_environment_pkg.egg-info/top_level.txt
+[0.776s] writing manifest file '../../../build/my_environment_pkg/my_environment_pkg.egg-info/SOURCES.txt'
+[0.796s] reading manifest file '../../../build/my_environment_pkg/my_environment_pkg.egg-info/SOURCES.txt'
+[0.796s] writing manifest file '../../../build/my_environment_pkg/my_environment_pkg.egg-info/SOURCES.txt'
+[0.796s] running build
+[0.797s] running build_py
+[0.797s] creating /workspaces/citros_example_robotic_arm/ros2_ws/build/my_environment_pkg/build
+[0.797s] creating /workspaces/citros_example_robotic_arm/ros2_ws/build/my_environment_pkg/build/lib
+[0.797s] creating /workspaces/citros_example_robotic_arm/ros2_ws/build/my_environment_pkg/build/lib/my_environment_pkg
+[0.797s] copying my_environment_pkg/main_environment.py -> /workspaces/citros_example_robotic_arm/ros2_ws/build/my_environment_pkg/build/lib/my_environment_pkg
+[0.797s] copying my_environment_pkg/run_environment.py -> /workspaces/citros_example_robotic_arm/ros2_ws/build/my_environment_pkg/build/lib/my_environment_pkg
+[0.797s] copying my_environment_pkg/DDPG_robot_arm.py -> /workspaces/citros_example_robotic_arm/ros2_ws/build/my_environment_pkg/build/lib/my_environment_pkg
+[0.797s] copying my_environment_pkg/main_rl_environment.py -> /workspaces/citros_example_robotic_arm/ros2_ws/build/my_environment_pkg/build/lib/my_environment_pkg
+[0.797s] copying my_environment_pkg/collection_data.py -> /workspaces/citros_example_robotic_arm/ros2_ws/build/my_environment_pkg/build/lib/my_environment_pkg
+[0.797s] copying my_environment_pkg/__init__.py -> /workspaces/citros_example_robotic_arm/ros2_ws/build/my_environment_pkg/build/lib/my_environment_pkg
+[0.797s] running install
+[0.798s] running install_lib
+[0.798s] creating /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages/my_environment_pkg
+[0.798s] copying /workspaces/citros_example_robotic_arm/ros2_ws/build/my_environment_pkg/build/lib/my_environment_pkg/main_environment.py -> /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages/my_environment_pkg
+[0.798s] copying /workspaces/citros_example_robotic_arm/ros2_ws/build/my_environment_pkg/build/lib/my_environment_pkg/run_environment.py -> /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages/my_environment_pkg
+[0.798s] copying /workspaces/citros_example_robotic_arm/ros2_ws/build/my_environment_pkg/build/lib/my_environment_pkg/DDPG_robot_arm.py -> /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages/my_environment_pkg
+[0.799s] copying /workspaces/citros_example_robotic_arm/ros2_ws/build/my_environment_pkg/build/lib/my_environment_pkg/main_rl_environment.py -> /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages/my_environment_pkg
+[0.799s] copying /workspaces/citros_example_robotic_arm/ros2_ws/build/my_environment_pkg/build/lib/my_environment_pkg/collection_data.py -> /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages/my_environment_pkg
+[0.799s] copying /workspaces/citros_example_robotic_arm/ros2_ws/build/my_environment_pkg/build/lib/my_environment_pkg/__init__.py -> /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages/my_environment_pkg
+[0.800s] byte-compiling /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages/my_environment_pkg/main_environment.py to main_environment.cpython-38.pyc
+[0.801s] byte-compiling /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages/my_environment_pkg/run_environment.py to run_environment.cpython-38.pyc
+[0.802s] byte-compiling /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages/my_environment_pkg/DDPG_robot_arm.py to DDPG_robot_arm.cpython-38.pyc
+[0.802s] byte-compiling /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages/my_environment_pkg/main_rl_environment.py to main_rl_environment.cpython-38.pyc
+[0.804s] byte-compiling /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages/my_environment_pkg/collection_data.py to collection_data.cpython-38.pyc
+[0.805s] byte-compiling /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages/my_environment_pkg/__init__.py to __init__.cpython-38.pyc
+[0.805s] running install_data
+[0.806s] creating /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/share/ament_index
+[0.806s] creating /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/share/ament_index/resource_index
+[0.806s] creating /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/share/ament_index/resource_index/packages
+[0.807s] copying resource/my_environment_pkg -> /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/share/ament_index/resource_index/packages
+[0.807s] copying package.xml -> /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/share/my_environment_pkg
+[0.807s] creating /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/share/my_environment_pkg/launch
+[0.807s] copying launch/my_environment.launch.py -> /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/share/my_environment_pkg/launch
+[0.807s] creating /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/share/my_environment_pkg/rviz
+[0.807s] copying rviz/my_rviz_env.rviz -> /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/share/my_environment_pkg/rviz
+[0.808s] creating /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/share/my_environment_pkg/worlds
+[0.808s] copying worlds/my_world.world -> /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/share/my_environment_pkg/worlds
+[0.808s] running install_egg_info
+[0.809s] Copying ../../../build/my_environment_pkg/my_environment_pkg.egg-info to /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages/my_environment_pkg-0.0.0-py3.8.egg-info
+[0.810s] running install_scripts
+[0.817s] Installing data_collection script to /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/lib/my_environment_pkg
+[0.817s] Installing run_environment script to /workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/lib/my_environment_pkg
+[0.817s] writing list of installed files to '/workspaces/citros_example_robotic_arm/ros2_ws/build/my_environment_pkg/install.log'
+[0.842s] Invoked command in '/workspaces/citros_example_robotic_arm/ros2_ws/src/robotic_arm_environment/my_environment_pkg' returned '0': PYTHONPATH=/workspaces/citros_example_robotic_arm/ros2_ws/build/my_environment_pkg/prefix_override:/workspaces/citros_example_robotic_arm/ros2_ws/install/my_environment_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/my_environment_pkg build --build-base /workspaces/citros_example_robotic_arm/ros2_ws/build/my_environment_pkg/build install --record /workspaces/citros_example_robotic_arm/ros2_ws/build/my_environment_pkg/install.log --install-scripts $base/lib/my_environment_pkg --single-version-externally-managed

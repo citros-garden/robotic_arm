@@ -93,3 +93,8 @@ RUN cd libfranka && mkdir build && cd build && \
     dpkg -i libfranka*.deb
 
 RUN echo "RCUTILS_COLORIZED_OUTPUT=1" >> /home/$USERNAME/.bashrc
+
+RUN apt-get update && apt-get install -y \
+    python3-vcstool \
+    ros-foxy-test-msgs \
+    ros-foxy-gazebo-ros-pkgs

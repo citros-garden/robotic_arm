@@ -1,3 +1,6 @@
 [submodule "franka_ros2_ws/src/franka_ros2"]
 	path = franka_ros2_ws/src/franka_ros2
 	url = https://github.com/frankaemika/franka_ros2
+[submodule "ros2_ws/src/gazebo_ros2_control"]
+	path = ros2_ws/src/gazebo_ros2_control
+	url = https://github.com/ros-controls/gazebo_ros2_control

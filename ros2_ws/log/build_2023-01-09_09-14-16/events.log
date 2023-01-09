@@ -1,0 +1,865 @@
+[0.000000] (-) TimerEvent: {}
+[0.000138] (control_msgs) JobQueued: {'identifier': 'control_msgs', 'dependencies': OrderedDict()}
+[0.000164] (realtime_tools) JobQueued: {'identifier': 'realtime_tools', 'dependencies': OrderedDict()}
+[0.000177] (control_msgs) JobStarted: {'identifier': 'control_msgs'}
+[0.006331] (realtime_tools) JobStarted: {'identifier': 'realtime_tools'}
+[0.012073] (control_msgs) JobProgress: {'identifier': 'control_msgs', 'progress': 'cmake'}
+[0.012241] (control_msgs) Command: {'cmd': ['/usr/bin/cmake', '/workspaces/citros_example_robotic_arm/ros2_ws/src/ros-controls/control_msgs/control_msgs', '-DCMAKE_INSTALL_PREFIX=/workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs'], 'cwd': '/workspaces/citros_example_robotic_arm/ros2_ws/build/control_msgs', 'env': OrderedDict([('HOSTNAME', 'lulav'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/helpers/browser.sh'), ('HOME', '/home/dev'), ('OLDPWD', '/workspaces/citros_example_robotic_arm'), ('TERM_PROGRAM_VERSION', '1.74.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-ea8941db-2fc9-4b75-b6e2-d54fdc1bc6e7.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-d5e3509a58b06597d8319e2486e7012dc07e497a.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-d5e3509a58b06597d8319e2486e7012dc07e497a.sock","/home/dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-701aebadf5.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-d5e3509a58b06597d8319e2486e7012dc07e497a.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/citros_example_robotic_arm/ros2_ws/build/control_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.015161] (realtime_tools) JobProgress: {'identifier': 'realtime_tools', 'progress': 'cmake'}
+[0.015267] (realtime_tools) Command: {'cmd': ['/usr/bin/cmake', '/workspaces/citros_example_robotic_arm/ros2_ws/src/ros-controls/realtime_tools', '-DCMAKE_INSTALL_PREFIX=/workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools'], 'cwd': '/workspaces/citros_example_robotic_arm/ros2_ws/build/realtime_tools', 'env': OrderedDict([('HOSTNAME', 'lulav'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/helpers/browser.sh'), ('HOME', '/home/dev'), ('OLDPWD', '/workspaces/citros_example_robotic_arm'), ('TERM_PROGRAM_VERSION', '1.74.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-ea8941db-2fc9-4b75-b6e2-d54fdc1bc6e7.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-d5e3509a58b06597d8319e2486e7012dc07e497a.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-d5e3509a58b06597d8319e2486e7012dc07e497a.sock","/home/dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-701aebadf5.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-d5e3509a58b06597d8319e2486e7012dc07e497a.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/citros_example_robotic_arm/ros2_ws/build/realtime_tools'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.050106] (control_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.050398] (realtime_tools) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.084745] (control_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.085080] (realtime_tools) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.087886] (control_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.088008] (realtime_tools) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.099026] (-) TimerEvent: {}
+[0.132684] (realtime_tools) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.132924] (control_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.133496] (realtime_tools) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.133675] (control_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.176782] (realtime_tools) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.177062] (control_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.184059] (control_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.184167] (control_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.184830] (realtime_tools) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.185004] (realtime_tools) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.186017] (control_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.186754] (realtime_tools) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.199119] (-) TimerEvent: {}
+[0.238850] (control_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.239547] (control_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.239698] (realtime_tools) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.240998] (realtime_tools) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.290095] (control_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.290401] (realtime_tools) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.297934] (realtime_tools) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.298164] (realtime_tools) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.298261] (control_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.298459] (control_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.299210] (-) TimerEvent: {}
+[0.300060] (control_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.300180] (realtime_tools) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.317152] (realtime_tools) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.317297] (realtime_tools) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.317494] (control_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.317586] (control_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.399397] (-) TimerEvent: {}
+[0.433937] (realtime_tools) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.434078] (control_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)\n'}
+[0.454911] (control_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.460019] (control_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.467801] (realtime_tools) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.473216] (realtime_tools) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.499517] (-) TimerEvent: {}
+[0.518131] (control_msgs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.531706] (realtime_tools) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.543711] (control_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.557106] (realtime_tools) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.599729] (-) TimerEvent: {}
+[0.604754] (control_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.619059] (realtime_tools) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.623796] (control_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[0.631743] (control_msgs) StdoutLine: {'line': b'-- Found action_msgs: 1.0.0 (/opt/ros/foxy/share/action_msgs/cmake)\n'}
+[0.658245] (realtime_tools) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.659210] (realtime_tools) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.659439] (control_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[0.668532] (realtime_tools) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.699040] (control_msgs) StdoutLine: {'line': b'-- Found trajectory_msgs: 2.0.5 (/opt/ros/foxy/share/trajectory_msgs/cmake)\n'}
+[0.699893] (-) TimerEvent: {}
+[0.714422] (realtime_tools) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.714558] (realtime_tools) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.747972] (control_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.7 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[0.762889] (realtime_tools) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[0.763067] (realtime_tools) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[0.800045] (-) TimerEvent: {}
+[0.800427] (realtime_tools) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[0.800587] (realtime_tools) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[0.813414] (control_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[0.849648] (realtime_tools) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[0.850709] (realtime_tools) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.900236] (-) TimerEvent: {}
+[0.953837] (realtime_tools) StdoutLine: {'line': b'-- Found rclcpp_action: 2.4.2 (/opt/ros/foxy/share/rclcpp_action/cmake)\n'}
+[0.962678] (control_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)\n'}
+[1.000463] (-) TimerEvent: {}
+[1.008020] (realtime_tools) StdoutLine: {'line': b'-- Found ament_cmake_cppcheck: 0.9.7 (/opt/ros/foxy/share/ament_cmake_cppcheck/cmake)\n'}
+[1.009428] (realtime_tools) StdoutLine: {'line': b'-- Found ament_cmake_cpplint: 0.9.7 (/opt/ros/foxy/share/ament_cmake_cpplint/cmake)\n'}
+[1.010952] (realtime_tools) StdoutLine: {'line': b'-- Found ament_cmake_lint_cmake: 0.9.7 (/opt/ros/foxy/share/ament_cmake_lint_cmake/cmake)\n'}
+[1.012278] (realtime_tools) StdoutLine: {'line': b'-- Found ament_cmake_uncrustify: 0.9.7 (/opt/ros/foxy/share/ament_cmake_uncrustify/cmake)\n'}
+[1.014584] (realtime_tools) StdoutLine: {'line': b'-- Found ament_cmake_gmock: 0.9.11 (/opt/ros/foxy/share/ament_cmake_gmock/cmake)\n'}
+[1.016129] (realtime_tools) StdoutLine: {'line': b'-- Found test_msgs: 1.0.0 (/opt/ros/foxy/share/test_msgs/cmake)\n'}
+[1.067478] (realtime_tools) StdoutLine: {'line': b"-- Found gmock sources under '/opt/ros/foxy/src/gmock_vendor': C++ tests using 'Google Mock' will be built\n"}
+[1.071297] (realtime_tools) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 0.9.11 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)\n'}
+[1.072105] (realtime_tools) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[1.100679] (-) TimerEvent: {}
+[1.116119] (realtime_tools) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.157232] (control_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.180723] (realtime_tools) StdoutLine: {'line': b'-- Generating done\n'}
+[1.182332] (realtime_tools) StdoutLine: {'line': b'-- Build files have been written to: /workspaces/citros_example_robotic_arm/ros2_ws/build/realtime_tools\n'}
+[1.190120] (realtime_tools) CommandEnded: {'returncode': 0}
+[1.190861] (realtime_tools) JobProgress: {'identifier': 'realtime_tools', 'progress': 'build'}
+[1.190900] (realtime_tools) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/citros_example_robotic_arm/ros2_ws/build/realtime_tools', '--', '-j20', '-l20'], 'cwd': '/workspaces/citros_example_robotic_arm/ros2_ws/build/realtime_tools', 'env': OrderedDict([('HOSTNAME', 'lulav'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/helpers/browser.sh'), ('HOME', '/home/dev'), ('OLDPWD', '/workspaces/citros_example_robotic_arm'), ('TERM_PROGRAM_VERSION', '1.74.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-ea8941db-2fc9-4b75-b6e2-d54fdc1bc6e7.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-d5e3509a58b06597d8319e2486e7012dc07e497a.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-d5e3509a58b06597d8319e2486e7012dc07e497a.sock","/home/dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-701aebadf5.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-d5e3509a58b06597d8319e2486e7012dc07e497a.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/citros_example_robotic_arm/ros2_ws/build/realtime_tools'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[1.200790] (-) TimerEvent: {}
+[1.216320] (realtime_tools) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realtime_tools\x1b[0m\n'}
+[1.216518] (realtime_tools) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gmock_main\x1b[0m\n'}
+[1.216609] (realtime_tools) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gmock\x1b[0m\n'}
+[1.227317] (realtime_tools) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/realtime_tools.dir/src/realtime_clock.cpp.o\x1b[0m\n'}
+[1.236711] (control_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.237796] (realtime_tools) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o\x1b[0m\n'}
+[1.243252] (realtime_tools) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/foxy/src/gtest_vendor/src/gtest-all.cc.o\x1b[0m\n'}
+[1.243491] (realtime_tools) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o\x1b[0m\n'}
+[1.256565] (control_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[1.258096] (control_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)\n'}
+[1.275984] (control_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[1.276193] (control_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.276309] (control_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[1.276399] (control_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[1.291208] (control_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.300920] (-) TimerEvent: {}
+[1.352761] (control_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.354089] (control_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.354864] (control_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.359055] (control_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.401019] (-) TimerEvent: {}
+[1.427119] (control_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.429053] (control_msgs) StdoutLine: {'line': b'-- Build files have been written to: /workspaces/citros_example_robotic_arm/ros2_ws/build/control_msgs\n'}
+[1.435936] (control_msgs) CommandEnded: {'returncode': 0}
+[1.438403] (control_msgs) JobProgress: {'identifier': 'control_msgs', 'progress': 'build'}
+[1.438469] (control_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/citros_example_robotic_arm/ros2_ws/build/control_msgs', '--', '-j20', '-l20'], 'cwd': '/workspaces/citros_example_robotic_arm/ros2_ws/build/control_msgs', 'env': OrderedDict([('HOSTNAME', 'lulav'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/helpers/browser.sh'), ('HOME', '/home/dev'), ('OLDPWD', '/workspaces/citros_example_robotic_arm'), ('TERM_PROGRAM_VERSION', '1.74.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-ea8941db-2fc9-4b75-b6e2-d54fdc1bc6e7.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-d5e3509a58b06597d8319e2486e7012dc07e497a.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-d5e3509a58b06597d8319e2486e7012dc07e497a.sock","/home/dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-701aebadf5.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-d5e3509a58b06597d8319e2486e7012dc07e497a.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/citros_example_robotic_arm/ros2_ws/build/control_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[1.470755] (control_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.470974] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__cpp\x1b[0m\n'}
+[1.478411] (control_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.501234] (-) TimerEvent: {}
+[1.601669] (-) TimerEvent: {}
+[1.619391] (realtime_tools) StdoutLine: {'line': b'[ 29%] \x1b[32m\x1b[1mLinking CXX static library librealtime_tools.a\x1b[0m\n'}
+[1.641231] (realtime_tools) StdoutLine: {'line': b'[ 29%] Built target realtime_tools\n'}
+[1.701857] (-) TimerEvent: {}
+[1.728316] (realtime_tools) StdoutLine: {'line': b'[ 35%] \x1b[32m\x1b[1mLinking CXX static library libgmock_main.a\x1b[0m\n'}
+[1.749065] (realtime_tools) StdoutLine: {'line': b'[ 35%] Built target gmock_main\n'}
+[1.801992] (-) TimerEvent: {}
+[1.902380] (-) TimerEvent: {}
+[2.002743] (-) TimerEvent: {}
+[2.103103] (-) TimerEvent: {}
+[2.203461] (-) TimerEvent: {}
+[2.303816] (-) TimerEvent: {}
+[2.404165] (-) TimerEvent: {}
+[2.504474] (-) TimerEvent: {}
+[2.604809] (-) TimerEvent: {}
+[2.661825] (control_msgs) StdoutLine: {'line': b'[  1%] Built target control_msgs__cpp\n'}
+[2.668965] (control_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.669160] (control_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.669392] (control_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.704927] (-) TimerEvent: {}
+[2.805295] (-) TimerEvent: {}
+[2.807683] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__rosidl_generator_c\x1b[0m\n'}
+[2.835906] (control_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/msg/detail/dynamic_joint_state__functions.c.o\x1b[0m\n'}
+[2.837149] (control_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/msg/detail/joint_controller_state__functions.c.o\x1b[0m\n'}
+[2.838837] (control_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/msg/detail/gripper_command__functions.c.o\x1b[0m\n'}
+[2.839093] (control_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/msg/detail/interface_value__functions.c.o\x1b[0m\n'}
+[2.839170] (control_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/msg/detail/joint_trajectory_controller_state__functions.c.o\x1b[0m\n'}
+[2.839270] (control_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/action/detail/follow_joint_trajectory__functions.c.o\x1b[0m\n'}
+[2.839480] (control_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/msg/detail/joint_jog__functions.c.o\x1b[0m\n'}
+[2.839800] (control_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/srv/detail/query_calibration_state__functions.c.o\x1b[0m\n'}
+[2.839900] (control_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/srv/detail/query_trajectory_state__functions.c.o\x1b[0m\n'}
+[2.840137] (control_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/msg/detail/pid_state__functions.c.o\x1b[0m\n'}
+[2.840413] (control_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/action/detail/joint_trajectory__functions.c.o\x1b[0m\n'}
+[2.840498] (control_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/msg/detail/joint_tolerance__functions.c.o\x1b[0m\n'}
+[2.841615] (control_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/action/detail/gripper_command__functions.c.o\x1b[0m\n'}
+[2.842392] (control_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/action/detail/single_joint_position__functions.c.o\x1b[0m\n'}
+[2.848765] (control_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_generator_c.dir/rosidl_generator_c/control_msgs/action/detail/point_head__functions.c.o\x1b[0m\n'}
+[2.905395] (-) TimerEvent: {}
+[2.978162] (control_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32m\x1b[1mLinking C shared library libcontrol_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[3.005487] (-) TimerEvent: {}
+[3.009037] (control_msgs) StdoutLine: {'line': b'[ 14%] Built target control_msgs__rosidl_generator_c\n'}
+[3.016602] (control_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.016835] (control_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.105570] (-) TimerEvent: {}
+[3.166129] (realtime_tools) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX static library libgmock.a\x1b[0m\n'}
+[3.205660] (-) TimerEvent: {}
+[3.210125] (realtime_tools) StdoutLine: {'line': b'[ 41%] Built target gmock\n'}
+[3.216988] (realtime_tools) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realtime_buffer_tests\x1b[0m\n'}
+[3.220705] (realtime_tools) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realtime_clock_tests\x1b[0m\n'}
+[3.220853] (realtime_tools) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realtime_publisher_tests\x1b[0m\n'}
+[3.220937] (realtime_tools) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realtime_server_goal_handle_tests\x1b[0m\n'}
+[3.221011] (realtime_tools) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target realtime_box_tests\x1b[0m\n'}
+[3.231496] (realtime_tools) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/realtime_buffer_tests.dir/test/realtime_buffer_tests.cpp.o\x1b[0m\n'}
+[3.238740] (realtime_tools) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/realtime_box_tests.dir/test/realtime_box_tests.cpp.o\x1b[0m\n'}
+[3.245914] (realtime_tools) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/realtime_clock_tests.dir/test/realtime_clock_tests.cpp.o\x1b[0m\n'}
+[3.265000] (realtime_tools) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/realtime_publisher_tests.dir/test/realtime_publisher_tests.cpp.o\x1b[0m\n'}
+[3.269996] (realtime_tools) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/realtime_server_goal_handle_tests.dir/test/realtime_server_goal_handle_tests.cpp.o\x1b[0m\n'}
+[3.305752] (-) TimerEvent: {}
+[3.406008] (-) TimerEvent: {}
+[3.486256] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[3.506103] (-) TimerEvent: {}
+[3.515231] (control_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/msg/dynamic_joint_state__type_support.cpp.o\x1b[0m\n'}
+[3.516479] (control_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/msg/interface_value__type_support.cpp.o\x1b[0m\n'}
+[3.516696] (control_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/msg/joint_tolerance__type_support.cpp.o\x1b[0m\n'}
+[3.516850] (control_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/msg/joint_trajectory_controller_state__type_support.cpp.o\x1b[0m\n'}
+[3.517093] (control_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/msg/joint_controller_state__type_support.cpp.o\x1b[0m\n'}
+[3.517824] (control_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/msg/joint_jog__type_support.cpp.o\x1b[0m\n'}
+[3.517929] (control_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/msg/gripper_command__type_support.cpp.o\x1b[0m\n'}
+[3.518019] (control_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/msg/pid_state__type_support.cpp.o\x1b[0m\n'}
+[3.521779] (control_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/srv/query_calibration_state__type_support.cpp.o\x1b[0m\n'}
+[3.522933] (control_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/action/gripper_command__type_support.cpp.o\x1b[0m\n'}
+[3.525901] (control_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/srv/query_trajectory_state__type_support.cpp.o\x1b[0m\n'}
+[3.526322] (control_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/action/follow_joint_trajectory__type_support.cpp.o\x1b[0m\n'}
+[3.526399] (control_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/action/point_head__type_support.cpp.o\x1b[0m\n'}
+[3.526509] (control_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/action/joint_trajectory__type_support.cpp.o\x1b[0m\n'}
+[3.531529] (control_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/control_msgs/action/single_joint_position__type_support.cpp.o\x1b[0m\n'}
+[3.606205] (-) TimerEvent: {}
+[3.706510] (-) TimerEvent: {}
+[3.806848] (-) TimerEvent: {}
+[3.893211] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[3.906946] (-) TimerEvent: {}
+[3.913823] (control_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/msg/detail/dynamic_joint_state__type_support.cpp.o\x1b[0m\n'}
+[3.915391] (control_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/msg/detail/gripper_command__type_support.cpp.o\x1b[0m\n'}
+[3.924770] (control_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/msg/detail/joint_trajectory_controller_state__type_support.cpp.o\x1b[0m\n'}
+[3.925136] (control_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/msg/detail/joint_controller_state__type_support.cpp.o\x1b[0m\n'}
+[3.931643] (control_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/msg/detail/interface_value__type_support.cpp.o\x1b[0m\n'}
+[3.946658] (control_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/msg/detail/joint_tolerance__type_support.cpp.o\x1b[0m\n'}
+[3.951883] (control_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/msg/detail/joint_jog__type_support.cpp.o\x1b[0m\n'}
+[3.952168] (control_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/srv/detail/query_trajectory_state__type_support.cpp.o\x1b[0m\n'}
+[3.954053] (control_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/action/detail/follow_joint_trajectory__type_support.cpp.o\x1b[0m\n'}
+[3.959113] (control_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/msg/detail/pid_state__type_support.cpp.o\x1b[0m\n'}
+[3.959997] (control_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/srv/detail/query_calibration_state__type_support.cpp.o\x1b[0m\n'}
+[3.961624] (control_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/action/detail/gripper_command__type_support.cpp.o\x1b[0m\n'}
+[4.007044] (-) TimerEvent: {}
+[4.031511] (control_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/action/detail/joint_trajectory__type_support.cpp.o\x1b[0m\n'}
+[4.038109] (control_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32m\x1b[1mLinking CXX shared library libcontrol_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.044095] (control_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/action/detail/single_joint_position__type_support.cpp.o\x1b[0m\n'}
+[4.044312] (control_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/control_msgs/action/detail/point_head__type_support.cpp.o\x1b[0m\n'}
+[4.107151] (-) TimerEvent: {}
+[4.160829] (control_msgs) StdoutLine: {'line': b'[ 38%] Built target control_msgs__rosidl_typesupport_cpp\n'}
+[4.207266] (-) TimerEvent: {}
+[4.307597] (-) TimerEvent: {}
+[4.363785] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[4.401526] (control_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/msg/dynamic_joint_state__type_support.cpp.o\x1b[0m\n'}
+[4.402423] (control_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/msg/gripper_command__type_support.cpp.o\x1b[0m\n'}
+[4.407733] (-) TimerEvent: {}
+[4.408058] (control_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/msg/interface_value__type_support.cpp.o\x1b[0m\n'}
+[4.408888] (control_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/msg/joint_tolerance__type_support.cpp.o\x1b[0m\n'}
+[4.429547] (control_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/msg/joint_controller_state__type_support.cpp.o\x1b[0m\n'}
+[4.433973] (control_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/msg/joint_trajectory_controller_state__type_support.cpp.o\x1b[0m\n'}
+[4.434360] (control_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/msg/joint_jog__type_support.cpp.o\x1b[0m\n'}
+[4.439144] (control_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/srv/query_calibration_state__type_support.cpp.o\x1b[0m\n'}
+[4.444684] (control_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/msg/pid_state__type_support.cpp.o\x1b[0m\n'}
+[4.462955] (control_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/action/follow_joint_trajectory__type_support.cpp.o\x1b[0m\n'}
+[4.463208] (control_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/srv/query_trajectory_state__type_support.cpp.o\x1b[0m\n'}
+[4.463699] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[4.467966] (control_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/action/joint_trajectory__type_support.cpp.o\x1b[0m\n'}
+[4.469990] (realtime_tools) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX executable realtime_buffer_tests\x1b[0m\n'}
+[4.472398] (control_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/action/gripper_command__type_support.cpp.o\x1b[0m\n'}
+[4.477936] (control_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/action/point_head__type_support.cpp.o\x1b[0m\n'}
+[4.480225] (control_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/control_msgs/action/single_joint_position__type_support.cpp.o\x1b[0m\n'}
+[4.501936] (control_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/msg/detail/dds_fastrtps/joint_controller_state__type_support.cpp.o\x1b[0m\n'}
+[4.502181] (control_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/msg/detail/dds_fastrtps/gripper_command__type_support.cpp.o\x1b[0m\n'}
+[4.502283] (control_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/msg/detail/dds_fastrtps/interface_value__type_support.cpp.o\x1b[0m\n'}
+[4.502343] (control_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/msg/detail/dds_fastrtps/dynamic_joint_state__type_support.cpp.o\x1b[0m\n'}
+[4.507841] (-) TimerEvent: {}
+[4.510001] (control_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/msg/detail/dds_fastrtps/joint_jog__type_support.cpp.o\x1b[0m\n'}
+[4.519710] (control_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/msg/detail/dds_fastrtps/joint_trajectory_controller_state__type_support.cpp.o\x1b[0m\n'}
+[4.520807] (control_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/msg/detail/dds_fastrtps/pid_state__type_support.cpp.o\x1b[0m\n'}
+[4.531170] (control_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/msg/detail/dds_fastrtps/joint_tolerance__type_support.cpp.o\x1b[0m\n'}
+[4.533972] (control_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/action/detail/dds_fastrtps/follow_joint_trajectory__type_support.cpp.o\x1b[0m\n'}
+[4.538093] (control_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/srv/detail/dds_fastrtps/query_calibration_state__type_support.cpp.o\x1b[0m\n'}
+[4.544234] (control_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/action/detail/dds_fastrtps/gripper_command__type_support.cpp.o\x1b[0m\n'}
+[4.546282] (control_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libcontrol_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.549747] (control_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/srv/detail/dds_fastrtps/query_trajectory_state__type_support.cpp.o\x1b[0m\n'}
+[4.560587] (control_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/action/detail/dds_fastrtps/joint_trajectory__type_support.cpp.o\x1b[0m\n'}
+[4.564547] (realtime_tools) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking CXX executable realtime_clock_tests\x1b[0m\n'}
+[4.593576] (control_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/action/detail/dds_fastrtps/single_joint_position__type_support.cpp.o\x1b[0m\n'}
+[4.594131] (control_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/control_msgs/action/detail/dds_fastrtps/point_head__type_support.cpp.o\x1b[0m\n'}
+[4.602945] (realtime_tools) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking CXX executable realtime_box_tests\x1b[0m\n'}
+[4.608000] (-) TimerEvent: {}
+[4.611272] (control_msgs) StdoutLine: {'line': b'[ 60%] Built target control_msgs__rosidl_typesupport_c\n'}
+[4.630832] (control_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libcontrol_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.708151] (-) TimerEvent: {}
+[4.809123] (-) TimerEvent: {}
+[4.809469] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[4.842402] (control_msgs) StdoutLine: {'line': b'[ 61%] Built target control_msgs__rosidl_typesupport_introspection_cpp\n'}
+[4.856713] (realtime_tools) StdoutLine: {'line': b'[ 88%] Built target realtime_buffer_tests\n'}
+[4.857124] (control_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/msg/detail/dynamic_joint_state__type_support.c.o\x1b[0m\n'}
+[4.866441] (control_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/msg/detail/interface_value__type_support.c.o\x1b[0m\n'}
+[4.870112] (control_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/msg/detail/joint_controller_state__type_support.c.o\x1b[0m\n'}
+[4.877931] (control_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/msg/detail/gripper_command__type_support.c.o\x1b[0m\n'}
+[4.888689] (control_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/msg/detail/joint_jog__type_support.c.o\x1b[0m\n'}
+[4.909243] (-) TimerEvent: {}
+[4.944255] (control_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/msg/detail/joint_tolerance__type_support.c.o\x1b[0m\n'}
+[4.965590] (realtime_tools) StdoutLine: {'line': b'[ 88%] Built target realtime_box_tests\n'}
+[4.966067] (control_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/msg/detail/joint_trajectory_controller_state__type_support.c.o\x1b[0m\n'}
+[4.977554] (control_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/srv/detail/query_calibration_state__type_support.c.o\x1b[0m\n'}
+[4.979723] (control_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/msg/detail/pid_state__type_support.c.o\x1b[0m\n'}
+[4.980085] (control_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/srv/detail/query_trajectory_state__type_support.c.o\x1b[0m\n'}
+[5.002003] (control_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/action/detail/follow_joint_trajectory__type_support.c.o\x1b[0m\n'}
+[5.009391] (-) TimerEvent: {}
+[5.020833] (control_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/action/detail/joint_trajectory__type_support.c.o\x1b[0m\n'}
+[5.031990] (control_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/action/detail/single_joint_position__type_support.c.o\x1b[0m\n'}
+[5.034518] (control_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/action/detail/gripper_command__type_support.c.o\x1b[0m\n'}
+[5.036308] (control_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/control_msgs/action/detail/point_head__type_support.c.o\x1b[0m\n'}
+[5.042472] (realtime_tools) StdoutLine: {'line': b'[ 88%] Built target realtime_clock_tests\n'}
+[5.086821] (control_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking C shared library libcontrol_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.109600] (-) TimerEvent: {}
+[5.114144] (control_msgs) StdoutLine: {'line': b'[ 72%] Built target control_msgs__rosidl_typesupport_introspection_c\n'}
+[5.209829] (-) TimerEvent: {}
+[5.231515] (control_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libcontrol_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[5.302503] (control_msgs) StdoutLine: {'line': b'[ 72%] Built target control_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[5.310040] (-) TimerEvent: {}
+[5.311003] (control_msgs) StdoutLine: {'line': b'[ 73%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.410247] (-) TimerEvent: {}
+[5.510636] (-) TimerEvent: {}
+[5.611026] (-) TimerEvent: {}
+[5.711414] (-) TimerEvent: {}
+[5.811753] (-) TimerEvent: {}
+[5.912114] (-) TimerEvent: {}
+[6.012497] (-) TimerEvent: {}
+[6.112779] (-) TimerEvent: {}
+[6.213159] (-) TimerEvent: {}
+[6.313531] (-) TimerEvent: {}
+[6.413834] (-) TimerEvent: {}
+[6.424884] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[6.456233] (control_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/msg/detail/gripper_command__type_support_c.cpp.o\x1b[0m\n'}
+[6.456468] (control_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/msg/detail/joint_controller_state__type_support_c.cpp.o\x1b[0m\n'}
+[6.456607] (control_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/msg/detail/interface_value__type_support_c.cpp.o\x1b[0m\n'}
+[6.456744] (control_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/msg/detail/dynamic_joint_state__type_support_c.cpp.o\x1b[0m\n'}
+[6.459027] (control_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/msg/detail/pid_state__type_support_c.cpp.o\x1b[0m\n'}
+[6.460051] (control_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/msg/detail/joint_jog__type_support_c.cpp.o\x1b[0m\n'}
+[6.460127] (control_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/msg/detail/joint_tolerance__type_support_c.cpp.o\x1b[0m\n'}
+[6.460205] (control_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/msg/detail/joint_trajectory_controller_state__type_support_c.cpp.o\x1b[0m\n'}
+[6.460639] (control_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/action/detail/point_head__type_support_c.cpp.o\x1b[0m\n'}
+[6.460784] (control_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/action/detail/follow_joint_trajectory__type_support_c.cpp.o\x1b[0m\n'}
+[6.461569] (control_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/srv/detail/query_calibration_state__type_support_c.cpp.o\x1b[0m\n'}
+[6.461772] (control_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/srv/detail/query_trajectory_state__type_support_c.cpp.o\x1b[0m\n'}
+[6.462089] (control_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/action/detail/single_joint_position__type_support_c.cpp.o\x1b[0m\n'}
+[6.462199] (control_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/action/detail/joint_trajectory__type_support_c.cpp.o\x1b[0m\n'}
+[6.462295] (control_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/control_msgs/action/detail/gripper_command__type_support_c.cpp.o\x1b[0m\n'}
+[6.514092] (-) TimerEvent: {}
+[6.614440] (-) TimerEvent: {}
+[6.714854] (-) TimerEvent: {}
+[6.815264] (-) TimerEvent: {}
+[6.916053] (-) TimerEvent: {}
+[6.920063] (control_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX shared library libcontrol_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[6.985090] (control_msgs) StdoutLine: {'line': b'[ 84%] Built target control_msgs__rosidl_typesupport_fastrtps_c\n'}
+[6.991675] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs\x1b[0m\n'}
+[6.999309] (control_msgs) StdoutLine: {'line': b'[ 84%] Built target control_msgs\n'}
+[7.006953] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__py\x1b[0m\n'}
+[7.015413] (control_msgs) StdoutLine: {'line': b'[ 85%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[7.016119] (-) TimerEvent: {}
+[7.052233] (realtime_tools) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking CXX executable realtime_server_goal_handle_tests\x1b[0m\n'}
+[7.116261] (-) TimerEvent: {}
+[7.216566] (-) TimerEvent: {}
+[7.316938] (-) TimerEvent: {}
+[7.362773] (realtime_tools) StdoutLine: {'line': b'[ 94%] Built target realtime_server_goal_handle_tests\n'}
+[7.417031] (-) TimerEvent: {}
+[7.517339] (-) TimerEvent: {}
+[7.529744] (realtime_tools) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable realtime_publisher_tests\x1b[0m\n'}
+[7.617553] (-) TimerEvent: {}
+[7.717920] (-) TimerEvent: {}
+[7.818289] (-) TimerEvent: {}
+[7.877105] (realtime_tools) StdoutLine: {'line': b'[100%] Built target realtime_publisher_tests\n'}
+[7.887704] (realtime_tools) CommandEnded: {'returncode': 0}
+[7.912453] (realtime_tools) JobProgress: {'identifier': 'realtime_tools', 'progress': 'install'}
+[7.918590] (realtime_tools) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/citros_example_robotic_arm/ros2_ws/build/realtime_tools'], 'cwd': '/workspaces/citros_example_robotic_arm/ros2_ws/build/realtime_tools', 'env': OrderedDict([('HOSTNAME', 'lulav'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/helpers/browser.sh'), ('HOME', '/home/dev'), ('OLDPWD', '/workspaces/citros_example_robotic_arm'), ('TERM_PROGRAM_VERSION', '1.74.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-ea8941db-2fc9-4b75-b6e2-d54fdc1bc6e7.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-d5e3509a58b06597d8319e2486e7012dc07e497a.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-d5e3509a58b06597d8319e2486e7012dc07e497a.sock","/home/dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-701aebadf5.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-d5e3509a58b06597d8319e2486e7012dc07e497a.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/citros_example_robotic_arm/ros2_ws/build/realtime_tools'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[7.919822] (-) TimerEvent: {}
+[7.924233] (realtime_tools) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.924510] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/include\n'}
+[7.924598] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/include/realtime_tools\n'}
+[7.924673] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/include/realtime_tools/realtime_clock.h\n'}
+[7.924744] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/include/realtime_tools/realtime_buffer.h\n'}
+[7.924818] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/include/realtime_tools/realtime_server_goal_handle.h\n'}
+[7.924889] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/include/realtime_tools/realtime_box.h\n'}
+[7.924968] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/include/realtime_tools/realtime_publisher.h\n'}
+[7.925147] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/lib/librealtime_tools.a\n'}
+[7.925449] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/share/realtime_tools/environment/library_path.sh\n'}
+[7.925557] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/share/realtime_tools/environment/library_path.dsv\n'}
+[7.925671] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/share/ament_index/resource_index/package_run_dependencies/realtime_tools\n'}
+[7.925767] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/share/ament_index/resource_index/parent_prefix_path/realtime_tools\n'}
+[7.925846] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/share/realtime_tools/environment/ament_prefix_path.sh\n'}
+[7.925924] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/share/realtime_tools/environment/ament_prefix_path.dsv\n'}
+[7.926000] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/share/realtime_tools/environment/path.sh\n'}
+[7.926075] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/share/realtime_tools/environment/path.dsv\n'}
+[7.926152] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/share/realtime_tools/local_setup.bash\n'}
+[7.926226] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/share/realtime_tools/local_setup.sh\n'}
+[7.926298] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/share/realtime_tools/local_setup.zsh\n'}
+[7.926371] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/share/realtime_tools/local_setup.dsv\n'}
+[7.926444] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/share/realtime_tools/package.dsv\n'}
+[7.926518] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/share/ament_index/resource_index/packages/realtime_tools\n'}
+[7.926623] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/share/realtime_tools/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.926694] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/share/realtime_tools/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.926972] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/share/realtime_tools/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.928155] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/share/realtime_tools/cmake/realtime_toolsConfig.cmake\n'}
+[7.928202] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/share/realtime_tools/cmake/realtime_toolsConfig-version.cmake\n'}
+[7.929249] (realtime_tools) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/realtime_tools/share/realtime_tools/package.xml\n'}
+[7.929295] (realtime_tools) CommandEnded: {'returncode': 0}
+[7.970124] (realtime_tools) JobEnded: {'identifier': 'realtime_tools', 'rc': 0}
+[8.019946] (-) TimerEvent: {}
+[8.120272] (-) TimerEvent: {}
+[8.220496] (-) TimerEvent: {}
+[8.320801] (-) TimerEvent: {}
+[8.421106] (-) TimerEvent: {}
+[8.521421] (-) TimerEvent: {}
+[8.621773] (-) TimerEvent: {}
+[8.721990] (-) TimerEvent: {}
+[8.822300] (-) TimerEvent: {}
+[8.922612] (-) TimerEvent: {}
+[9.022926] (-) TimerEvent: {}
+[9.123239] (-) TimerEvent: {}
+[9.223679] (-) TimerEvent: {}
+[9.324061] (-) TimerEvent: {}
+[9.424417] (-) TimerEvent: {}
+[9.524661] (-) TimerEvent: {}
+[9.624936] (-) TimerEvent: {}
+[9.694938] (control_msgs) StdoutLine: {'line': b'[ 85%] Built target control_msgs__py\n'}
+[9.701330] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__python\x1b[0m\n'}
+[9.725156] (-) TimerEvent: {}
+[9.732972] (control_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/msg/_gripper_command_s.c.o\x1b[0m\n'}
+[9.733535] (control_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/msg/_dynamic_joint_state_s.c.o\x1b[0m\n'}
+[9.733856] (control_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/msg/_joint_jog_s.c.o\x1b[0m\n'}
+[9.733999] (control_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/msg/_interface_value_s.c.o\x1b[0m\n'}
+[9.734550] (control_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/msg/_joint_controller_state_s.c.o\x1b[0m\n'}
+[9.735867] (control_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/msg/_pid_state_s.c.o\x1b[0m\n'}
+[9.738073] (control_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/action/_joint_trajectory_s.c.o\x1b[0m\n'}
+[9.738374] (control_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/action/_follow_joint_trajectory_s.c.o\x1b[0m\n'}
+[9.739240] (control_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/msg/_joint_tolerance_s.c.o\x1b[0m\n'}
+[9.739885] (control_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/srv/_query_calibration_state_s.c.o\x1b[0m\n'}
+[9.740274] (control_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/msg/_joint_trajectory_controller_state_s.c.o\x1b[0m\n'}
+[9.740505] (control_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/srv/_query_trajectory_state_s.c.o\x1b[0m\n'}
+[9.741292] (control_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/action/_point_head_s.c.o\x1b[0m\n'}
+[9.741455] (control_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/action/_gripper_command_s.c.o\x1b[0m\n'}
+[9.742112] (control_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/control_msgs__python.dir/rosidl_generator_py/control_msgs/action/_single_joint_position_s.c.o\x1b[0m\n'}
+[9.825265] (-) TimerEvent: {}
+[9.869671] (control_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/control_msgs/libcontrol_msgs__python.so\x1b[0m\n'}
+[9.910753] (control_msgs) StdoutLine: {'line': b'[ 96%] Built target control_msgs__python\n'}
+[9.921835] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[9.922092] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[9.922281] (control_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target control_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[9.925435] (-) TimerEvent: {}
+[9.936871] (control_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/control_msgs/_control_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[9.937082] (control_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/control_msgs/_control_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[9.938647] (control_msgs) StdoutLine: {'line': b'[ 99%] \x1b[32mBuilding C object CMakeFiles/control_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/control_msgs/_control_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[10.025630] (-) TimerEvent: {}
+[10.089721] (control_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/control_msgs/control_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[10.089885] (control_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/control_msgs/control_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[10.090500] (control_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/control_msgs/control_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[10.120547] (control_msgs) StdoutLine: {'line': b'[100%] Built target control_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[10.120724] (control_msgs) StdoutLine: {'line': b'[100%] Built target control_msgs__rosidl_typesupport_c__pyext\n'}
+[10.125790] (-) TimerEvent: {}
+[10.142689] (control_msgs) StdoutLine: {'line': b'[100%] Built target control_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[10.151135] (control_msgs) CommandEnded: {'returncode': 0}
+[10.226070] (-) TimerEvent: {}
+[10.326421] (-) TimerEvent: {}
+[10.426783] (-) TimerEvent: {}
+[10.470635] (control_msgs) JobProgress: {'identifier': 'control_msgs', 'progress': 'install'}
+[10.470881] (control_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/citros_example_robotic_arm/ros2_ws/build/control_msgs'], 'cwd': '/workspaces/citros_example_robotic_arm/ros2_ws/build/control_msgs', 'env': OrderedDict([('HOSTNAME', 'lulav'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/helpers/browser.sh'), ('HOME', '/home/dev'), ('OLDPWD', '/workspaces/citros_example_robotic_arm'), ('TERM_PROGRAM_VERSION', '1.74.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-ea8941db-2fc9-4b75-b6e2-d54fdc1bc6e7.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('ROS_DISTRO', 'foxy'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-d5e3509a58b06597d8319e2486e7012dc07e497a.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/remote-cli:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-d5e3509a58b06597d8319e2486e7012dc07e497a.sock","/home/dev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-701aebadf5.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-d5e3509a58b06597d8319e2486e7012dc07e497a.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/citros_example_robotic_arm/ros2_ws/build/control_msgs'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[10.482976] (control_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.483152] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/ament_index/resource_index/rosidl_interfaces/control_msgs\n'}
+[10.483417] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs\n'}
+[10.483491] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv\n'}
+[10.483539] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/query_trajectory_state.h\n'}
+[10.483605] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail\n'}
+[10.483687] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_calibration_state__functions.h\n'}
+[10.483732] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_trajectory_state__functions.c\n'}
+[10.483791] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_trajectory_state__type_support.h\n'}
+[10.483846] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_trajectory_state__functions.h\n'}
+[10.483890] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_trajectory_state__struct.h\n'}
+[10.483934] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_calibration_state__functions.c\n'}
+[10.483997] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_calibration_state__type_support.h\n'}
+[10.484074] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_calibration_state__struct.h\n'}
+[10.484124] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/query_calibration_state.h\n'}
+[10.484170] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg\n'}
+[10.484250] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/joint_trajectory_controller_state.h\n'}
+[10.484318] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/gripper_command.h\n'}
+[10.484363] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/pid_state.h\n'}
+[10.484409] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail\n'}
+[10.484452] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/pid_state__functions.c\n'}
+[10.484513] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/gripper_command__functions.c\n'}
+[10.484592] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_trajectory_controller_state__struct.h\n'}
+[10.484636] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_controller_state__functions.h\n'}
+[10.484680] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/interface_value__functions.c\n'}
+[10.484725] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_jog__functions.c\n'}
+[10.484786] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_jog__struct.h\n'}
+[10.484859] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/gripper_command__type_support.h\n'}
+[10.484907] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/interface_value__functions.h\n'}
+[10.484953] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_tolerance__functions.c\n'}
+[10.485017] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_tolerance__type_support.h\n'}
+[10.485062] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_controller_state__type_support.h\n'}
+[10.485124] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_trajectory_controller_state__type_support.h\n'}
+[10.485167] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/gripper_command__struct.h\n'}
+[10.485209] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/dynamic_joint_state__functions.c\n'}
+[10.485274] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_trajectory_controller_state__functions.h\n'}
+[10.485326] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_tolerance__functions.h\n'}
+[10.485368] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/interface_value__type_support.h\n'}
+[10.485411] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/dynamic_joint_state__functions.h\n'}
+[10.485480] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_controller_state__functions.c\n'}
+[10.485537] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/interface_value__struct.h\n'}
+[10.485581] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_jog__functions.h\n'}
+[10.485643] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/pid_state__type_support.h\n'}
+[10.485708] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/dynamic_joint_state__struct.h\n'}
+[10.485759] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/gripper_command__functions.h\n'}
+[10.485814] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_controller_state__struct.h\n'}
+[10.485856] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/dynamic_joint_state__type_support.h\n'}
+[10.485898] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/pid_state__struct.h\n'}
+[10.485930] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_tolerance__struct.h\n'}
+[10.485964] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_trajectory_controller_state__functions.c\n'}
+[10.486011] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_jog__type_support.h\n'}
+[10.486045] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/pid_state__functions.h\n'}
+[10.486099] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/joint_jog.h\n'}
+[10.486136] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/joint_tolerance.h\n'}
+[10.486188] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/dynamic_joint_state.h\n'}
+[10.486230] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/interface_value.h\n'}
+[10.486264] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/joint_controller_state.h\n'}
+[10.486312] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[10.486362] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action\n'}
+[10.486418] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/gripper_command.h\n'}
+[10.486455] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/follow_joint_trajectory.h\n'}
+[10.486501] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail\n'}
+[10.486543] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/gripper_command__functions.c\n'}
+[10.486576] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/single_joint_position__functions.h\n'}
+[10.486621] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/joint_trajectory__type_support.h\n'}
+[10.486667] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/point_head__functions.h\n'}
+[10.486734] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/gripper_command__type_support.h\n'}
+[10.486777] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/joint_trajectory__struct.h\n'}
+[10.486823] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/point_head__type_support.h\n'}
+[10.486868] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/joint_trajectory__functions.c\n'}
+[10.486950] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/point_head__struct.h\n'}
+[10.486998] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/follow_joint_trajectory__functions.h\n'}
+[10.487085] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/point_head__functions.c\n'}
+[10.487166] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/gripper_command__struct.h\n'}
+[10.487214] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/single_joint_position__type_support.h\n'}
+[10.487261] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/follow_joint_trajectory__type_support.h\n'}
+[10.487307] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/single_joint_position__struct.h\n'}
+[10.487353] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/follow_joint_trajectory__functions.c\n'}
+[10.487444] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/joint_trajectory__functions.h\n'}
+[10.487516] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/gripper_command__functions.h\n'}
+[10.487597] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/single_joint_position__functions.c\n'}
+[10.487680] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/follow_joint_trajectory__struct.h\n'}
+[10.487730] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/point_head.h\n'}
+[10.487775] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/joint_trajectory.h\n'}
+[10.487821] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/single_joint_position.h\n'}
+[10.487941] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/environment/library_path.sh\n'}
+[10.488017] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/environment/library_path.dsv\n'}
+[10.488136] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_generator_c.so\n'}
+[10.488574] (control_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_generator_c.so" to ""\n'}
+[10.488633] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs\n'}
+[10.488677] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv\n'}
+[10.488719] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail\n'}
+[10.488750] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_calibration_state__rosidl_typesupport_fastrtps_c.h\n'}
+[10.488796] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_trajectory_state__rosidl_typesupport_fastrtps_c.h\n'}
+[10.488829] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg\n'}
+[10.488860] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail\n'}
+[10.488891] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_controller_state__rosidl_typesupport_fastrtps_c.h\n'}
+[10.488935] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/gripper_command__rosidl_typesupport_fastrtps_c.h\n'}
+[10.488989] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_trajectory_controller_state__rosidl_typesupport_fastrtps_c.h\n'}
+[10.489021] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/pid_state__rosidl_typesupport_fastrtps_c.h\n'}
+[10.489053] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_jog__rosidl_typesupport_fastrtps_c.h\n'}
+[10.489084] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/dynamic_joint_state__rosidl_typesupport_fastrtps_c.h\n'}
+[10.489127] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_tolerance__rosidl_typesupport_fastrtps_c.h\n'}
+[10.489183] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/interface_value__rosidl_typesupport_fastrtps_c.h\n'}
+[10.489214] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[10.489245] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action\n'}
+[10.489276] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail\n'}
+[10.489306] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/gripper_command__rosidl_typesupport_fastrtps_c.h\n'}
+[10.489349] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/follow_joint_trajectory__rosidl_typesupport_fastrtps_c.h\n'}
+[10.489400] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/point_head__rosidl_typesupport_fastrtps_c.h\n'}
+[10.489432] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/single_joint_position__rosidl_typesupport_fastrtps_c.h\n'}
+[10.489470] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/joint_trajectory__rosidl_typesupport_fastrtps_c.h\n'}
+[10.489503] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[10.489803] (control_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[10.489838] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs\n'}
+[10.489884] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv\n'}
+[10.489916] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail\n'}
+[10.489947] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/dds_fastrtps\n'}
+[10.489996] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_trajectory_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.490028] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_calibration_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.490059] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg\n'}
+[10.490103] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail\n'}
+[10.490159] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/dds_fastrtps\n'}
+[10.490193] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_trajectory_controller_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.490227] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/dynamic_joint_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.490258] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/gripper_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.490303] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/pid_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.490357] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/interface_value__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.490397] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_jog__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.490427] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_tolerance__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.490458] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_controller_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.490488] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[10.490534] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action\n'}
+[10.490566] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail\n'}
+[10.490598] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/dds_fastrtps\n'}
+[10.490628] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/joint_trajectory__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.490671] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/single_joint_position__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.490725] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/gripper_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.490756] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/point_head__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.490785] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/follow_joint_trajectory__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.490825] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[10.491477] (control_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[10.491564] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs\n'}
+[10.491606] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv\n'}
+[10.491642] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail\n'}
+[10.491696] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_trajectory_state__type_support.c\n'}
+[10.491731] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_trajectory_state__rosidl_typesupport_introspection_c.h\n'}
+[10.491765] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_calibration_state__type_support.c\n'}
+[10.491798] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_calibration_state__rosidl_typesupport_introspection_c.h\n'}
+[10.491833] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg\n'}
+[10.491868] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[10.491901] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail\n'}
+[10.491934] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_controller_state__rosidl_typesupport_introspection_c.h\n'}
+[10.491989] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/interface_value__type_support.c\n'}
+[10.492022] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_tolerance__rosidl_typesupport_introspection_c.h\n'}
+[10.492056] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/gripper_command__rosidl_typesupport_introspection_c.h\n'}
+[10.492089] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_tolerance__type_support.c\n'}
+[10.492121] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_jog__rosidl_typesupport_introspection_c.h\n'}
+[10.492153] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_trajectory_controller_state__type_support.c\n'}
+[10.492201] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_jog__type_support.c\n'}
+[10.492262] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/dynamic_joint_state__type_support.c\n'}
+[10.492312] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/pid_state__type_support.c\n'}
+[10.492344] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/interface_value__rosidl_typesupport_introspection_c.h\n'}
+[10.492376] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_trajectory_controller_state__rosidl_typesupport_introspection_c.h\n'}
+[10.492409] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/pid_state__rosidl_typesupport_introspection_c.h\n'}
+[10.492443] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_controller_state__type_support.c\n'}
+[10.492492] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/gripper_command__type_support.c\n'}
+[10.492526] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/dynamic_joint_state__rosidl_typesupport_introspection_c.h\n'}
+[10.492560] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action\n'}
+[10.492592] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail\n'}
+[10.492624] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/joint_trajectory__type_support.c\n'}
+[10.492671] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/single_joint_position__rosidl_typesupport_introspection_c.h\n'}
+[10.492724] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/gripper_command__rosidl_typesupport_introspection_c.h\n'}
+[10.492757] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/follow_joint_trajectory__rosidl_typesupport_introspection_c.h\n'}
+[10.492790] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/joint_trajectory__rosidl_typesupport_introspection_c.h\n'}
+[10.492822] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/single_joint_position__type_support.c\n'}
+[10.492868] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/follow_joint_trajectory__type_support.c\n'}
+[10.492919] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/point_head__rosidl_typesupport_introspection_c.h\n'}
+[10.492956] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/gripper_command__type_support.c\n'}
+[10.493001] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/point_head__type_support.c\n'}
+[10.493081] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_typesupport_introspection_c.so\n'}
+[10.493355] (control_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[10.493465] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_typesupport_c.so\n'}
+[10.493633] (control_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_typesupport_c.so" to ""\n'}
+[10.493677] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs\n'}
+[10.493729] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv\n'}
+[10.493765] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/query_calibration_state.hpp\n'}
+[10.493813] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail\n'}
+[10.493869] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_calibration_state__traits.hpp\n'}
+[10.493911] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_calibration_state__builder.hpp\n'}
+[10.493950] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_calibration_state__struct.hpp\n'}
+[10.493982] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_trajectory_state__traits.hpp\n'}
+[10.494028] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_trajectory_state__builder.hpp\n'}
+[10.494062] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_trajectory_state__struct.hpp\n'}
+[10.494095] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/query_trajectory_state.hpp\n'}
+[10.494141] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg\n'}
+[10.494197] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/pid_state.hpp\n'}
+[10.494233] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/joint_tolerance.hpp\n'}
+[10.494269] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/joint_jog.hpp\n'}
+[10.494303] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail\n'}
+[10.494351] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_controller_state__builder.hpp\n'}
+[10.494390] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/interface_value__struct.hpp\n'}
+[10.494422] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_controller_state__struct.hpp\n'}
+[10.494455] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/interface_value__builder.hpp\n'}
+[10.494501] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_tolerance__struct.hpp\n'}
+[10.494554] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/pid_state__builder.hpp\n'}
+[10.494589] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/pid_state__traits.hpp\n'}
+[10.494623] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_tolerance__builder.hpp\n'}
+[10.494668] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_jog__builder.hpp\n'}
+[10.494722] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_controller_state__traits.hpp\n'}
+[10.494758] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/pid_state__struct.hpp\n'}
+[10.494791] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/dynamic_joint_state__traits.hpp\n'}
+[10.494836] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_jog__traits.hpp\n'}
+[10.494889] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_trajectory_controller_state__struct.hpp\n'}
+[10.494924] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_trajectory_controller_state__builder.hpp\n'}
+[10.494956] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/gripper_command__traits.hpp\n'}
+[10.495000] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/dynamic_joint_state__builder.hpp\n'}
+[10.495054] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/gripper_command__struct.hpp\n'}
+[10.495088] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/dynamic_joint_state__struct.hpp\n'}
+[10.495129] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_jog__struct.hpp\n'}
+[10.495162] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_tolerance__traits.hpp\n'}
+[10.495208] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/interface_value__traits.hpp\n'}
+[10.495263] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_trajectory_controller_state__traits.hpp\n'}
+[10.495297] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/gripper_command__builder.hpp\n'}
+[10.495332] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/joint_trajectory_controller_state.hpp\n'}
+[10.495376] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/joint_controller_state.hpp\n'}
+[10.495430] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/gripper_command.hpp\n'}
+[10.495464] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/interface_value.hpp\n'}
+[10.495496] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/dynamic_joint_state.hpp\n'}
+[10.495548] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action\n'}
+[10.495579] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/point_head.hpp\n'}
+[10.495612] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail\n'}
+[10.495643] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/joint_trajectory__traits.hpp\n'}
+[10.495687] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/follow_joint_trajectory__struct.hpp\n'}
+[10.495739] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/follow_joint_trajectory__traits.hpp\n'}
+[10.495773] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/point_head__traits.hpp\n'}
+[10.495805] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/single_joint_position__traits.hpp\n'}
+[10.495852] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/follow_joint_trajectory__builder.hpp\n'}
+[10.495892] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/point_head__builder.hpp\n'}
+[10.495923] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/single_joint_position__struct.hpp\n'}
+[10.495966] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/joint_trajectory__builder.hpp\n'}
+[10.496009] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/joint_trajectory__struct.hpp\n'}
+[10.496055] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/gripper_command__traits.hpp\n'}
+[10.496100] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/gripper_command__struct.hpp\n'}
+[10.496160] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/single_joint_position__builder.hpp\n'}
+[10.496207] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/point_head__struct.hpp\n'}
+[10.496270] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/gripper_command__builder.hpp\n'}
+[10.496392] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/joint_trajectory.hpp\n'}
+[10.496437] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/follow_joint_trajectory.hpp\n'}
+[10.496481] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/gripper_command.hpp\n'}
+[10.496524] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/single_joint_position.hpp\n'}
+[10.496594] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs\n'}
+[10.496639] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv\n'}
+[10.496688] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail\n'}
+[10.496723] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_calibration_state__type_support.cpp\n'}
+[10.496767] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_trajectory_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.496812] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_calibration_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.496844] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/srv/detail/query_trajectory_state__type_support.cpp\n'}
+[10.496894] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg\n'}
+[10.496924] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail\n'}
+[10.496956] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_trajectory_controller_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.497001] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/gripper_command__type_support.cpp\n'}
+[10.497051] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/interface_value__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.497084] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_controller_state__type_support.cpp\n'}
+[10.497131] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/dynamic_joint_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.497163] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_jog__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.497211] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/gripper_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.497243] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_trajectory_controller_state__type_support.cpp\n'}
+[10.497288] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_controller_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.497333] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/interface_value__type_support.cpp\n'}
+[10.497378] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_tolerance__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.497422] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/pid_state__type_support.cpp\n'}
+[10.497467] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_tolerance__type_support.cpp\n'}
+[10.497512] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/dynamic_joint_state__type_support.cpp\n'}
+[10.497556] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/pid_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.497597] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/msg/detail/joint_jog__type_support.cpp\n'}
+[10.497641] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action\n'}
+[10.497689] (control_msgs) StdoutLine: {'line': b'-- Up-to-date: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail\n'}
+[10.497727] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/joint_trajectory__type_support.cpp\n'}
+[10.497758] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/gripper_command__type_support.cpp\n'}
+[10.497802] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/single_joint_position__type_support.cpp\n'}
+[10.497859] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/point_head__type_support.cpp\n'}
+[10.497927] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/single_joint_position__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.497972] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/gripper_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.498019] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/follow_joint_trajectory__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.498062] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/follow_joint_trajectory__type_support.cpp\n'}
+[10.498135] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/point_head__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.498179] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/include/control_msgs/action/detail/joint_trajectory__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.498304] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[10.498869] (control_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[10.498915] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_typesupport_cpp.so\n'}
+[10.499113] (control_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/libcontrol_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[10.499155] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/environment/pythonpath.sh\n'}
+[10.499221] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/environment/pythonpath.dsv\n'}
+[10.499332] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/__init__.py\n'}
+[10.518565] (control_msgs) StdoutLine: {'line': b"Compiling '/workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/__init__.py'...\n"}
+[10.520977] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg\n'}
+[10.521072] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/_joint_trajectory_controller_state.py\n'}
+[10.521113] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/_joint_jog_s.c\n'}
+[10.521147] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/_joint_tolerance_s.c\n'}
+[10.521179] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/_joint_tolerance.py\n'}
+[10.521241] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/_interface_value.py\n'}
+[10.521287] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/_gripper_command.py\n'}
+[10.521321] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/_gripper_command_s.c\n'}
+[10.521353] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/_pid_state.py\n'}
+[10.521409] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/_joint_trajectory_controller_state_s.c\n'}
+[10.521451] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/_joint_jog.py\n'}
+[10.521483] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/_dynamic_joint_state.py\n'}
+[10.521514] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/_joint_controller_state.py\n'}
+[10.521571] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/_pid_state_s.c\n'}
+[10.521615] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/_dynamic_joint_state_s.c\n'}
+[10.521648] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/_interface_value_s.c\n'}
+[10.521706] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/_joint_controller_state_s.c\n'}
+[10.521739] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/msg/__init__.py\n'}
+[10.521788] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/srv\n'}
+[10.521819] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/srv/_query_calibration_state.py\n'}
+[10.521859] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/srv/_query_trajectory_state.py\n'}
+[10.521902] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/srv/_query_calibration_state_s.c\n'}
+[10.521946] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/srv/_query_trajectory_state_s.c\n'}
+[10.521992] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/srv/__init__.py\n'}
+[10.522049] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/action\n'}
+[10.522092] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/action/_follow_joint_trajectory.py\n'}
+[10.522169] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/action/_gripper_command.py\n'}
+[10.522245] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/action/_gripper_command_s.c\n'}
+[10.522305] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/action/_joint_trajectory_s.c\n'}
+[10.522369] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/action/_point_head_s.c\n'}
+[10.522427] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/action/_follow_joint_trajectory_s.c\n'}
+[10.522493] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/action/_single_joint_position.py\n'}
+[10.522561] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/action/_point_head.py\n'}
+[10.522629] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/action/_joint_trajectory.py\n'}
+[10.522693] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/action/__init__.py\n'}
+[10.522733] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/action/_single_joint_position_s.c\n'}
+[10.522949] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/control_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[10.523415] (control_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/control_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[10.523498] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/control_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[10.523964] (control_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/control_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[10.524028] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/control_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[10.524449] (control_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/python3.8/site-packages/control_msgs/control_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[10.524494] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/libcontrol_msgs__python.so\n'}
+[10.524757] (control_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/lib/libcontrol_msgs__python.so" to ""\n'}
+[10.524822] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/msg/DynamicJointState.idl\n'}
+[10.524893] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/msg/GripperCommand.idl\n'}
+[10.524949] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/msg/InterfaceValue.idl\n'}
+[10.525009] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/msg/JointControllerState.idl\n'}
+[10.525068] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/msg/JointJog.idl\n'}
+[10.525129] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/msg/JointTolerance.idl\n'}
+[10.525185] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/msg/JointTrajectoryControllerState.idl\n'}
+[10.525241] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/msg/PidState.idl\n'}
+[10.525317] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/srv/QueryCalibrationState.idl\n'}
+[10.525378] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/srv/QueryTrajectoryState.idl\n'}
+[10.525448] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/action/FollowJointTrajectory.idl\n'}
+[10.525506] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/action/GripperCommand.idl\n'}
+[10.525564] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/action/JointTrajectory.idl\n'}
+[10.525630] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/action/PointHead.idl\n'}
+[10.525684] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/action/SingleJointPosition.idl\n'}
+[10.525745] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/msg/DynamicJointState.msg\n'}
+[10.525804] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/msg/GripperCommand.msg\n'}
+[10.525864] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/msg/InterfaceValue.msg\n'}
+[10.525919] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/msg/JointControllerState.msg\n'}
+[10.525975] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/msg/JointJog.msg\n'}
+[10.526036] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/msg/JointTolerance.msg\n'}
+[10.526099] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/msg/JointTrajectoryControllerState.msg\n'}
+[10.526154] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/msg/PidState.msg\n'}
+[10.526213] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/srv/QueryCalibrationState.srv\n'}
+[10.526274] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/srv/QueryCalibrationState_Request.msg\n'}
+[10.526336] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/srv/QueryCalibrationState_Response.msg\n'}
+[10.526395] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/srv/QueryTrajectoryState.srv\n'}
+[10.526457] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/srv/QueryTrajectoryState_Request.msg\n'}
+[10.526516] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/srv/QueryTrajectoryState_Response.msg\n'}
+[10.526579] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/action/FollowJointTrajectory.action\n'}
+[10.526635] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/action/GripperCommand.action\n'}
+[10.526695] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/action/JointTrajectory.action\n'}
+[10.526755] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/action/PointHead.action\n'}
+[10.526786] (-) TimerEvent: {}
+[10.526872] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/action/SingleJointPosition.action\n'}
+[10.526919] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/ament_index/resource_index/package_run_dependencies/control_msgs\n'}
+[10.526992] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/ament_index/resource_index/parent_prefix_path/control_msgs\n'}
+[10.527063] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/environment/ament_prefix_path.sh\n'}
+[10.527137] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/environment/ament_prefix_path.dsv\n'}
+[10.527202] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/environment/path.sh\n'}
+[10.527266] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/environment/path.dsv\n'}
+[10.527326] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/local_setup.bash\n'}
+[10.527387] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/local_setup.sh\n'}
+[10.527440] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/local_setup.zsh\n'}
+[10.527497] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/local_setup.dsv\n'}
+[10.527556] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/package.dsv\n'}
+[10.527643] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/ament_index/resource_index/packages/control_msgs\n'}
+[10.527748] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgs__rosidl_generator_cExport.cmake\n'}
+[10.527819] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[10.527922] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[10.527993] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[10.528078] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgs__rosidl_typesupport_cExport.cmake\n'}
+[10.528146] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[10.528239] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgs__rosidl_generator_cppExport.cmake\n'}
+[10.528348] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[10.528410] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[10.528503] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[10.528636] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[10.528708] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[10.528765] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[10.528837] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[10.528903] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[10.528968] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[10.529025] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[10.529084] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[10.529183] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgsConfig.cmake\n'}
+[10.529225] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/cmake/control_msgsConfig-version.cmake\n'}
+[10.529285] (control_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/citros_example_robotic_arm/ros2_ws/install/control_msgs/share/control_msgs/package.xml\n'}
+[10.531046] (control_msgs) CommandEnded: {'returncode': 0}
+[10.627029] (-) TimerEvent: {}
+[10.727437] (-) TimerEvent: {}
+[10.824624] (control_msgs) JobEnded: {'identifier': 'control_msgs', 'rc': 0}
+[10.825157] (-) EventReactorShutdown: {}
