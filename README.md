@@ -23,6 +23,10 @@ The robotic arm model and configuration was imported from [franka github page](h
 
 Run visualization with:
 
-        ros2 launch franka_description visualize_franka.launch.py load_gripper:=true
+        ros2 launch my_doosan_pkg my_doosan_gazebo_controller.launch.py
+
+And in another terminal:
+
+        ros2 run my_doosan_pkg trajectory_points_act_server
 
 

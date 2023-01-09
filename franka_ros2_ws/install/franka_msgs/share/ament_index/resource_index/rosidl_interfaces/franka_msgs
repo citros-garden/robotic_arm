@@ -1,8 +1,0 @@
-action/Grasp.action
-action/Grasp.idl
-action/Homing.action
-action/Homing.idl
-action/Move.action
-action/Move.idl
-msg/GraspEpsilon.idl
-msg/GraspEpsilon.msg

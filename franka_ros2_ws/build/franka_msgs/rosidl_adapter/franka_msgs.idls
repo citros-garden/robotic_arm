@@ -1,4 +1,0 @@
-/workspaces/citros_example_robotic_arm/franka_ros2_ws/build/franka_msgs/rosidl_adapter/franka_msgs:action/Grasp.idl
-/workspaces/citros_example_robotic_arm/franka_ros2_ws/build/franka_msgs/rosidl_adapter/franka_msgs:action/Homing.idl
-/workspaces/citros_example_robotic_arm/franka_ros2_ws/build/franka_msgs/rosidl_adapter/franka_msgs:action/Move.idl
-/workspaces/citros_example_robotic_arm/franka_ros2_ws/build/franka_msgs/rosidl_adapter/franka_msgs:msg/GraspEpsilon.idl

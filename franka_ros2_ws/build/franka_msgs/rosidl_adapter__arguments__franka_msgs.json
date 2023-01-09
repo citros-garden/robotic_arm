@@ -1,9 +1,0 @@
-{
-  "package_name": "franka_msgs",
-  "non_idl_tuples": [
-    "/workspaces/citros_example_robotic_arm/franka_ros2_ws/src/franka_ros2/franka_msgs:action/Grasp.action",
-    "/workspaces/citros_example_robotic_arm/franka_ros2_ws/src/franka_ros2/franka_msgs:action/Homing.action",
-    "/workspaces/citros_example_robotic_arm/franka_ros2_ws/src/franka_ros2/franka_msgs:action/Move.action",
-    "/workspaces/citros_example_robotic_arm/franka_ros2_ws/src/franka_ros2/franka_msgs:msg/GraspEpsilon.msg"
-  ]
-}
