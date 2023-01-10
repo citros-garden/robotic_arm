@@ -1,0 +1,25 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "ros2-launch-gazebo",
+            "type": "shell",
+            "command": "source ros2_ws/install/local_setup.bash && ros2 launch my_doosan_pkg my_doosan_gazebo_controller.launch.py",
+            "problemMatcher": []
+        },
+        {
+            "label": "ros2-launch-control",
+            "type": "shell",
+            "command": "source ros2_ws/install/local_setup.bash && ros2 run my_doosan_pkg trajectory_points_act_server",
+            "problemMatcher": []
+        },
+        {
+            "label": "ros2-build",
+            "type": "shell",
+            "command": "cd ros2_ws && colcon build",
+            "problemMatcher": []
+        }
+    ]
+}
