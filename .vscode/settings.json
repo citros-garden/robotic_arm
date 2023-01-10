@@ -3,6 +3,8 @@
         "citros",
         "colcon",
         "doosan",
-        "franka"
+        "franka",
+        "ikpy",
+        "urdf"
     ]
 }

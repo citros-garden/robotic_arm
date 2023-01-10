@@ -98,3 +98,5 @@ RUN apt-get update && apt-get install -y \
     python3-vcstool \
     ros-foxy-test-msgs \
     ros-foxy-gazebo-ros-pkgs
+
+RUN pip install ikpy
