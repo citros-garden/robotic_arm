@@ -87,10 +87,48 @@
       <elevation>0</elevation>
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
+    <model name='foldable_table'>
+      <static>1</static>
+      <link name='base_link'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>/home/dev/.gazebo/models/foldable_table/mesh/foldable_table.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <pose>0 0 0.35 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>1.82 0.74 0.67</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+      <pose>0.210198 1.76622 0 0 -0 0</pose>
+    </model>
     <model name='person_standing'>
+      <static>1</static>
       <link name='link'>
         <inertial>
-          <pose>0 -0.1 0.95 0 -0 0</pose>
+          <pose>0 -0.4 0.95 1.57 -0 1.57</pose>
           <mass>80</mass>
           <inertia>
             <ixx>24.88</ixx>
@@ -155,55 +193,18 @@
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <pose>0.082908 -0.098515 0 0 -0 0</pose>
-    </model>
-    <model name='foldable_table'>
-      <static>1</static>
-      <link name='base_link'>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>/home/dev/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/foldable_table/2/mesh/foldable_table.dae</uri>
-            </mesh>
-          </geometry>
-        </visual>
-        <collision name='collision'>
-          <pose>0 0 0.35 0 -0 0</pose>
-          <geometry>
-            <box>
-              <size>1.82 0.74 0.67</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose>0.175496 -1.20379 0 0 -0 0</pose>
+      <pose>-0.49521 0.700758 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>359 282000000</sim_time>
-      <real_time>360 994253356</real_time>
-      <wall_time>1673424435 760116710</wall_time>
-      <iterations>359282</iterations>
+      <sim_time>27 149000000</sim_time>
+      <real_time>27 534536613</real_time>
+      <wall_time>1673443073 939370530</wall_time>
+      <iterations>27149</iterations>
       <model name='foldable_table'>
-        <pose>0.175496 -1.20379 0 0 -0 0</pose>
+        <pose>0.210198 1.76622 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='base_link'>
-          <pose>0.175496 -1.20379 0 0 -0 0</pose>
+          <pose>0.210198 1.76622 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -220,13 +221,13 @@
         </link>
       </model>
       <model name='person_standing'>
-        <pose>0.088803 -0.098577 0.275346 1.59084 -0 1.57013</pose>
+        <pose>-0.49521 0.700758 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>0.088803 -0.098577 0.275346 1.59084 -0 1.57013</pose>
+          <pose>-0.49521 0.700758 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0 0 0 0 -0 0</acceleration>
-          <wrench>-0 0 0 0 -0 0</wrench>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <light name='sun'>
@@ -235,7 +236,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>4.99931 -4.99931 2.00343 0 0.275643 2.35619</pose>
+        <pose>4.99736 -4.98902 2.03405 0 0.275643 2.35619</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
