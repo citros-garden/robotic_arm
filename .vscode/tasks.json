@@ -20,6 +20,12 @@
             "type": "shell",
             "command": "cd ros2_ws && colcon build",
             "problemMatcher": []
+        },
+        {
+            "label": "ros2-websocket",
+            "type": "shell",
+            "command": "cd ros2_ws && ros2 launch rosbridge_server rosbridge_websocket_launch.xml",
+            "problemMatcher": []
         }
     ]
 }

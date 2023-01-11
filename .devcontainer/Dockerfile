@@ -100,3 +100,6 @@ RUN apt-get update && apt-get install -y \
     ros-foxy-gazebo-ros-pkgs
 
 RUN pip install ikpy
+
+# download rosbridge for Foxglove monitoring
+RUN apt update && apt-get install -y ros-foxy-rosbridge-suite
