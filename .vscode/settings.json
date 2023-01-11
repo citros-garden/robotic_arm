@@ -5,6 +5,7 @@
         "doosan",
         "franka",
         "ikpy",
+        "rosbridge",
         "urdf"
     ]
 }
