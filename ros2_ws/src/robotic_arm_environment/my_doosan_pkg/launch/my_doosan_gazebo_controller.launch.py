@@ -41,7 +41,7 @@ def generate_launch_description():
 
 	xacro_file = get_package_share_directory('my_doosan_pkg') + '/description'+'/xacro/'+ robot_model +'.urdf.xacro'
 
-	setpoints=Node(
+	setpoints = Node(
         package = 'my_doosan_pkg',
         name = 'trajectory_points_act_server',
         executable = 'trajectory_points_act_server',
