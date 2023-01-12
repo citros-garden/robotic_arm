@@ -1,0 +1,8 @@
+joint_points_act_service:
+  ros__parameters:
+    j0: -0.8
+    j1: 0.2
+    j2: 0.75
+    j3: -0.102
+    j4: 1.57
+    j5: -0.686
