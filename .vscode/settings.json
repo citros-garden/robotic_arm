@@ -6,6 +6,7 @@
         "franka",
         "ikpy",
         "rosbridge",
+        "setpoints",
         "urdf",
         "xacro"
     ]

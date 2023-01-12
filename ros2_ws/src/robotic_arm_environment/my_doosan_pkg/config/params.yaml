@@ -1,4 +1,4 @@
-joint_points_act_service:
+trajectory_points_act_server:
   ros__parameters:
     j0: -0.8
     j1: 0.2

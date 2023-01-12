@@ -29,13 +29,25 @@ from launch.launch_description_sources import FrontendLaunchDescriptionSource
 
 def generate_launch_description():
 
+	robot_config = os.path.join(
+        get_package_share_directory('my_doosan_pkg'),
+        'config',
+        'params.yaml'
+        )
+
 	
 	robot_model = 'a0912'
 	#robot_model = 'm1013'
 
 	xacro_file = get_package_share_directory('my_doosan_pkg') + '/description'+'/xacro/'+ robot_model +'.urdf.xacro'
 
-	
+	setpoints=Node(
+        package = 'my_doosan_pkg',
+        name = 'trajectory_points_act_server',
+        executable = 'trajectory_points_act_server',
+        parameters = [robot_config]
+    )
+
 	# Robot State Publisher 
 	robot_state_publisher = Node(package    ='robot_state_publisher',
 								 executable ='robot_state_publisher',
@@ -74,4 +86,4 @@ def generate_launch_description():
                 bridge_dir + '/launch/rosbridge_websocket_launch.xml'))
 
 
-	return LaunchDescription([robot_state_publisher, spawn_entity_robot, gazebo_node, load_joint_state_broadcaster, load_joint_trajectory_controller, included_launch  ])
+	return LaunchDescription([setpoints, robot_state_publisher, spawn_entity_robot, gazebo_node, load_joint_state_broadcaster, load_joint_trajectory_controller, included_launch  ])
