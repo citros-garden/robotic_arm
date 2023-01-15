@@ -1,7 +1,13 @@
 # General Info
 
 This repository contains a robotic arm example for CITROS integration.
-The robotic arm model and configuration was imported from [franka github page](https://github.com/frankaemika/franka_ros2).
+The robotic arm model and configuration was imported from [this](https://github.com/dvalenciar/robotic_arm_environment)Github project.
+
+# About the example
+
+This example simulate [Doosan a0912](https://www.doosanrobotics.com/en/products/series/a0912) robotics arm in ROS2-Gazebo environment. 
+
+![image](ros2_ws/src/robotic_arm_environment/images/robotic_arm_example.png)
 
 # Installation
 
@@ -9,24 +15,22 @@ The robotic arm model and configuration was imported from [franka github page](h
 
         git clone git@github.com:lulav/citros_example_robotic_arm.git
 
-2. Init submodules:
+2. in VSCode, open the repository inside the devcontainer with: `open inside container`
 
-        git submodule update --init --recursive
+3. Source the workspace:
 
-3. Build the workspace:
+        source ros2_ws/install/local_setup.bash
 
-        cd franka_ros2_ws
-        colcon build
-        source install/local_setup.bash
+**RECOMMENDED** 
+
+There are pre-configured workspace [tasks](https://www.allisonthackston.com/articles/vscode-tasks.html) for building and running the simulation.
+Create a shortcut for task-running and select the desired option.
 
 # Run
 
-Run visualization with:
+Run with:
 
         ros2 launch my_doosan_pkg my_doosan_gazebo_controller.launch.py
 
-And in another terminal:
-
-        ros2 run my_doosan_pkg trajectory_points_act_server
 
 

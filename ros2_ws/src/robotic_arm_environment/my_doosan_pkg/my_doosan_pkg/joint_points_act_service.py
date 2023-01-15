@@ -48,7 +48,6 @@ class TrajectoryActionClient(Node):
 
 		points = []
 		point_msg = JointTrajectoryPoint()
-		# point_msg.positions = [-0.8, 0.2, 0.75, -0.102, 1.57, -0.686]
 		self.get_logger().info(f"Sending to: [{self.j0}, {self.j1}, {self.j2}, {self.j3}, {self.j4}, {self.j5}]")
 		point_msg.positions = [self.j0, self.j1, self.j2, self.j3, self.j4, self.j5]
 		point_msg.time_from_start = Duration(seconds=3.0).to_msg()

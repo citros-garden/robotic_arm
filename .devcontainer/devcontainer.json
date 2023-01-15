@@ -6,7 +6,7 @@
 			"WORKSPACE": "${containerWorkspaceFolder}"
 		}
 	},
-	"postStartCommand": "bash ./.devcontainer/install.sh",
+	"postCreateCommand": "bash ./.devcontainer/install.sh",
 	"remoteUser": "dev",
 	"runArgs": [
 		"--network=host",
