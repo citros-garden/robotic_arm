@@ -31,10 +31,11 @@ from launch.event_handlers import (OnExecutionComplete, OnProcessExit,
 from launch.events import Shutdown, process
 
 class bcolors:
-    BLUE = '\033[94m'
-    GREEN = '\033[92m'
-    FAIL = '\033[91m'
-    ENDC = '\033[0m'
+	BLUE = '\033[94m'
+	WARNING = '\033[93m'
+	GREEN = '\033[92m'
+	FAIL = '\033[91m'
+	ENDC = '\033[0m'
 
 print('''\n\n==============================================
  ██████╗██╗████████╗██████╗  ██████╗ ███████╗
@@ -46,11 +47,10 @@ print('''\n\n==============================================
 ==============================================\n\n''')
 
 try:
-	headless = True if sys.argv[4] else False
+	headless = True if sys.argv[4].split(":=")[1] == 'True' else False
 except:
+	print(f"{bcolors.WARNING}Gazebo mode not selected, running default with GUI{bcolors.ENDC}")
 	headless = False
-
-print(f"{sys.argv[1]}, {headless}")
 
 def generate_launch_description():
 
