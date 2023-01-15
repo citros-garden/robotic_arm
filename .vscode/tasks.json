@@ -15,7 +15,7 @@
         {
             "label": "ros2-launch-gazebo-headless",
             "type": "shell",
-            "command": "source ros2_ws/install/local_setup.bash && ros2 launch my_doosan_pkg my_doosan_gazebo_controller.launch.py headless=True",
+            "command": "source ros2_ws/install/local_setup.bash && ros2 launch my_doosan_pkg my_doosan_gazebo_controller.launch.py headless:=True",
             "problemMatcher": [],
             "dependsOn": [
                 "ros2-build"
