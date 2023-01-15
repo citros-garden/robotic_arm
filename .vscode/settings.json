@@ -6,6 +6,7 @@
         "devcontainer",
         "doosan",
         "franka",
+        "gzserver",
         "ikpy",
         "rosbridge",
         "setpoints",

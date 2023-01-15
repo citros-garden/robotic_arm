@@ -28,9 +28,13 @@ Create a shortcut for task-running and select the desired option.
 
 # Run
 
-Run with:
+Run with with Gazebo GUI:
 
         ros2 launch my_doosan_pkg my_doosan_gazebo_controller.launch.py
+
+Run with with Headless:
+
+        ros2 launch my_doosan_pkg my_doosan_gazebo_controller.launch.py headless:=True
 
 
 

@@ -19,7 +19,7 @@ Describer:
 '''
 
 import os
-import time
+import sys
 from launch_ros.actions import Node
 from launch import LaunchDescription, launch_description_sources
 from launch.substitutions import Command
@@ -45,6 +45,13 @@ print('''\n\n==============================================
  ╚═════╝╚═╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚══════╝                                        
 ==============================================\n\n''')
 
+try:
+	headless = True if sys.argv[4] else False
+except:
+	headless = False
+
+print(f"{sys.argv[1]}, {headless}")
+
 def generate_launch_description():
 
 	robot_config = os.path.join(
@@ -52,10 +59,7 @@ def generate_launch_description():
         'config',
         'params.yaml'
         )
-
-	
 	robot_model = 'a0912'
-	#robot_model = 'm1013'
 
 	xacro_file = get_package_share_directory('my_doosan_pkg') + '/description'+'/xacro/'+ robot_model +'.urdf.xacro'
 
@@ -84,8 +88,8 @@ def generate_launch_description():
 	# Gazebo   
 	world_file_name = 'my_empty_world.world'
 	world = os.path.join(get_package_share_directory('my_doosan_pkg'), 'worlds', world_file_name)
-	gazebo_node = ExecuteProcess(cmd=['gazebo', '--verbose', world,'-s', 'libgazebo_ros_factory.so'], output='screen')
-
+	mode = 'gzserver' if headless == True else 'gazebo'
+	gazebo_node = ExecuteProcess(cmd=[mode, '--verbose', world,'-s', 'libgazebo_ros_factory.so'], output='screen')
 
 	# load and START the controllers in launch file
 	
