@@ -93,7 +93,7 @@ def main(args=None):
 
 	rclpy.init()
 
-	time.sleep(5)
+	time.sleep(25)
 	
 	action_client = TrajectoryActionClient()
 	future = action_client.send_goal()
