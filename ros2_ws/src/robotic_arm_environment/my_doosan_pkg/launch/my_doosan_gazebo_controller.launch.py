@@ -19,13 +19,31 @@ Describer:
 '''
 
 import os
+import time
 from launch_ros.actions import Node
 from launch import LaunchDescription, launch_description_sources
 from launch.substitutions import Command
-from launch.actions import ExecuteProcess, IncludeLaunchDescription
+from launch.actions import ExecuteProcess, EmitEvent, IncludeLaunchDescription, DeclareLaunchArgument, OpaqueFunction, RegisterEventHandler, LogInfo, TimerAction
 from ament_index_python.packages import get_package_share_directory
 from launch.launch_description_sources import FrontendLaunchDescriptionSource
+from launch.event_handlers import (OnExecutionComplete, OnProcessExit,
+                                OnProcessIO, OnProcessStart, OnShutdown)
+from launch.events import Shutdown, process
 
+class bcolors:
+    BLUE = '\033[94m'
+    GREEN = '\033[92m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+
+print('''\n\n==============================================
+ ██████╗██╗████████╗██████╗  ██████╗ ███████╗
+██╔════╝██║╚══██╔══╝██╔══██╗██╔═══██╗██╔════╝
+██║     ██║   ██║   ██████╔╝██║   ██║███████╗
+██║     ██║   ██║   ██╔══██╗██║   ██║╚════██║
+╚██████╗██║   ██║   ██║  ██║╚██████╔╝███████║
+ ╚═════╝╚═╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚══════╝                                        
+==============================================\n\n''')
 
 def generate_launch_description():
 
@@ -85,5 +103,16 @@ def generate_launch_description():
         launch_description_sources.FrontendLaunchDescriptionSource(
                 bridge_dir + '/launch/rosbridge_websocket_launch.xml'))
 
+	
+	sys_shut_down = RegisterEventHandler(OnProcessExit(
+		target_action=setpoints,
+        on_exit=[
+                    LogInfo(msg=(f'{bcolors.GREEN}The robot has reached its final position!{bcolors.ENDC}')),
+                    EmitEvent(event=Shutdown(
+                        reason='Finished'))
+		]		
+	))
 
-	return LaunchDescription([setpoints, robot_state_publisher, spawn_entity_robot, gazebo_node, load_joint_state_broadcaster, load_joint_trajectory_controller, included_launch  ])
+	ld =  LaunchDescription([setpoints, robot_state_publisher, spawn_entity_robot, gazebo_node, load_joint_state_broadcaster, load_joint_trajectory_controller, included_launch, sys_shut_down  ])
+
+	return ld
