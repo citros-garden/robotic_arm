@@ -1,13 +1,13 @@
 # General Info
 
 This repository contains a robotic arm example for CITROS integration.
-The robotic arm model and configuration was imported from [this](https://github.com/dvalenciar/robotic_arm_environment)Github project.
+The robotic arm model and configuration was imported from [this](https://github.com/dvalenciar/robotic_arm_environment) Github project.
 
 # About the example
 
 This example simulate [Doosan a0912](https://www.doosanrobotics.com/en/products/series/a0912) robotics arm in ROS2-Gazebo environment. 
 
-![image](ros2_ws/src/robotic_arm_environment/images/robotic_arm_example.png)
+![image](ros2_ws/src/robotic_arm_environment/images/readme.png)
 
 # Installation
 
