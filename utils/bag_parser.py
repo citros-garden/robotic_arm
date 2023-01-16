@@ -78,10 +78,6 @@ def main():
 
     bagparser = BagAnalyzer(path_to_bag)
 
-    # print(f"topic_type = {bagparser.topic_type}\n")
-    # print(f"topic_id = {bagparser.topic_id}\n")
-    # print(f"topic_msg_message = {bagparser.topic_msg_message}")
-
     fids, tip_position = bagparser.get_attr_from_topic(topic, path_to_attr)
     t = bagparser.create_time_axis_from_fid(fids, dt)
 
