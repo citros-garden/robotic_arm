@@ -15,18 +15,16 @@ This example simulate [Doosan a0912](https://www.doosanrobotics.com/en/products/
 
         git clone git@github.com:lulav/citros_example_robotic_arm.git
 
-2. in VSCode, open the repository inside the devcontainer with: `open inside container`
+2. in VSCode, open the repository inside the devcontainer with: `open inside container`. All the installation process is automatic with the [install script](.devcontainer/install.sh) that runs after the dockerfile is being built.
 
-3. Source the workspace:
 
-        source ros2_ws/install/local_setup.bash
+# Run
 
 **RECOMMENDED** 
-
 There are pre-configured workspace [tasks](https://www.allisonthackston.com/articles/vscode-tasks.html) for building and running the simulation.
 Create a shortcut for task-running and select the desired option.
 
-# Run
+If you prefer to run manually with ros2-cli:
 
 Run Gazebo GUI:
 
