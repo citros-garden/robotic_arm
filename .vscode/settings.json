@@ -9,6 +9,8 @@
         "franka",
         "gzserver",
         "ikpy",
+        "mymongo",
+        "pymongo",
         "rosbag",
         "rosbridge",
         "setpoints",
