@@ -106,7 +106,7 @@ def main():
         except Exception:
             pass
         ax.scatter(x, y, z, label=file)
-    plt.
+
     plt.show()
 
 if __name__ == "__main__":
