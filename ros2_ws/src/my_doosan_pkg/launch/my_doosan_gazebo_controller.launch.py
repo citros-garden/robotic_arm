@@ -117,6 +117,11 @@ def generate_launch_description():
 		]		
 	))
 
+	# recorder = ExecuteProcess(
+	# 						cmd=['ros2', 'bag', 'record', '-a'],
+    #         				output='screen' 
+	# )
+
 	ld =  LaunchDescription([setpoints, robot_state_publisher, spawn_entity_robot, gazebo_node, load_joint_state_broadcaster, load_joint_trajectory_controller, included_launch, sys_shut_down  ])
 
 	return ld

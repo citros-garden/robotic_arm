@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
+        "bagparser",
         "bcolors",
         "citros",
         "colcon",
@@ -8,6 +9,7 @@
         "franka",
         "gzserver",
         "ikpy",
+        "rosbag",
         "rosbridge",
         "setpoints",
         "urdf",

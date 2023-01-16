@@ -2,7 +2,9 @@ import sqlite3
 from rosidl_runtime_py.utilities import get_message
 from rclpy.serialization import deserialize_message
 import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
+import glob, os
 
 class BagAnalyzer():
 
@@ -69,33 +71,47 @@ class BagAnalyzer():
     def create_time_axis_from_fid(self, fids, dt):
         return [x*dt for x in fids]
 
+def get_db_files(bags_dir):
+    db_files = []
+    for root, dirs, files in os.walk(bags_dir):
+        for file in files:
+            if file.endswith(".db3"):
+                db_files.append(os.path.join(root, file))
+    return db_files
+
 def main():
 
-    path_to_bag = 'data/rosbag2_2023_01_15-11_32_49_0.db3'
+    bags_dir = 'data'
+    db_files = get_db_files(bags_dir)
+
     topic = "/gazebo/link_states"
     path_to_attr = "pose"
     dt = 0.01
 
-    bagparser = BagAnalyzer(path_to_bag)
+    fig = plt.figure(figsize=(12, 12))
 
-    fids, tip_position = bagparser.get_attr_from_topic(topic, path_to_attr)
-    t = bagparser.create_time_axis_from_fid(fids, dt)
+    for file in db_files:
+        print(file)
+        bagparser = BagAnalyzer(file)
 
-    x = [tip_position[i][9].position.x for i in range(len(tip_position))]
-    y = [tip_position[i][9].position.y for i in range(len(tip_position))]
-    z = [tip_position[i][9].position.z for i in range(len(tip_position))]
-    print(x)
+        fids, tip_position = bagparser.get_attr_from_topic(topic, path_to_attr)
+        t = bagparser.create_time_axis_from_fid(fids, dt)
 
-    # h = []
-    # for i in range(len(lla)):
-    #     h.append(lla[i][2])
+        try:
+            x = [tip_position[i][9].position.x for i in range(len(tip_position))]
+            y = [tip_position[i][9].position.y for i in range(len(tip_position))]
+            z = [tip_position[i][9].position.z for i in range(len(tip_position))]
 
-    # plt.plot(t,h)
-    # plt.show()
+        except Exception:
+            pass
 
+        ax = fig.add_subplot(projection='3d')
+        ax.scatter(x, y, z)
+        
+    plt.show()
 
 if __name__ == "__main__":
-    try:
-        main()
-    except Exception as e:
-        print(e)
+    # try:
+    main()
+    # except Exception as e:
+        # print(e)
