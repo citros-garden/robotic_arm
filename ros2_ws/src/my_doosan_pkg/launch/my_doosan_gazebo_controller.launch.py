@@ -50,7 +50,7 @@ try:
 	headless = True if sys.argv[4].split(":=")[1] == 'True' else False
 except:
 	print(f"{bcolors.WARNING}Gazebo mode not selected, running default with GUI{bcolors.ENDC}")
-	headless = False
+	headless = True
 
 def generate_launch_description():
 
