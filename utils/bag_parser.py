@@ -89,6 +89,7 @@ def main():
     dt = 0.01
 
     fig = plt.figure(figsize=(12, 12))
+    ax = fig.add_subplot(projection='3d')
 
     for file in db_files:
         print(file)
@@ -104,10 +105,8 @@ def main():
 
         except Exception:
             pass
-
-        ax = fig.add_subplot(projection='3d')
-        ax.scatter(x, y, z)
-        
+        ax.scatter(x, y, z, label=file)
+    plt.
     plt.show()
 
 if __name__ == "__main__":
