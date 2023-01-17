@@ -7,7 +7,7 @@ The robotic arm model and configuration was imported from [this](https://github.
 
 This example simulate [Doosan a0912](https://www.doosanrobotics.com/en/products/series/a0912) robotics arm in ROS2-Gazebo environment. 
 
-![image](ros2_ws/src/robotic_arm_environment/images/readme.png)
+![image](ros2_ws/src/images/readme.png)
 
 # Installation
 
