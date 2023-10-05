@@ -11,6 +11,10 @@ yes | cp -rf ${CITROS_MODEL_PATH}/person_standing ${GAZEBO_MODEL_PATH}
 colcon build
 echo "source /workspaces/robotic_arm/install/local_setup.bash" >> ~/.bashrc
 
+pip install urllib3 --upgrade
+pip install requests --upgrade
+pip install citros
+
 echo "
 ==============================================
  ██████╗██╗████████╗██████╗  ██████╗ ███████╗
