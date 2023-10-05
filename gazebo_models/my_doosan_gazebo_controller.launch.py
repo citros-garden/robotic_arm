@@ -49,7 +49,7 @@ def generate_launch_description():
 	spawn_entity_robot = Node(package     ='gazebo_ros', 
 							  executable  ='spawn_entity.py', 
 							  arguments   = ['-entity', 'my_doosan_robot', '-topic', 'robot_description'],
-							  output      ='screen')
+							  output      ='log')
 
 	# Gazebo   
 	world_file_name = 'my_empty_world.world'
@@ -61,12 +61,12 @@ def generate_launch_description():
 	
 	load_joint_state_broadcaster = ExecuteProcess(
 										cmd=['ros2', 'control', 'load_controller', '--set-state', 'start','joint_state_broadcaster'],
-										output='screen')
+										output='log')
 
 	
 	load_joint_trajectory_controller = ExecuteProcess( 
 										cmd=['ros2', 'control', 'load_controller', '--set-state', 'start', 'joint_trajectory_controller'], 
-										output='screen')
+										output='log')
 
 	bridge_dir = get_package_share_directory('rosbridge_server')
 	included_launch = IncludeLaunchDescription(
@@ -74,4 +74,4 @@ def generate_launch_description():
                 bridge_dir + '/launch/rosbridge_websocket_launch.xml'))
 
 
-	return LaunchDescription([robot_state_publisher, spawn_entity_robot, gazebo_node, load_joint_state_broadcaster, load_joint_trajectory_controller, included_launch  ])
+	return LaunchDescription([robot_state_publisher, spawn_entity_robot, gazebo_node, included_launch, load_joint_state_broadcaster, load_joint_trajectory_controller  ])
