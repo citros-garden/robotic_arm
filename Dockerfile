@@ -137,6 +137,14 @@ RUN colcon build --symlink-install
 RUN pip install --no-cache-dir --upgrade pip \
   && pip install --no-cache-dir  citros
 
+RUN pip install --no-cache-dir urllib3  \
+  && pip install --no-cache-dir requests  \
+  && pip install --no-cache-dir zipp 
+
+RUN pip install --upgrade urllib3  \
+  && pip install --upgrade requests  \
+  && pip install --upgrade zipp 
+
 RUN echo "if [ -f ${WORKSPACE}/install/setup.bash ]; then source ${WORKSPACE}/install/setup.bash; fi" >> ~/.bashrc
 
 RUN apt-get update && apt-get -y dist-upgrade --no-install-recommends   
