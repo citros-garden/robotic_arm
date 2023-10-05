@@ -131,10 +131,10 @@ WORKDIR /workspaces/robotic_arm
 COPY . .
 
 RUN . /opt/ros/${ROS_DISTRO}/setup.sh
-WORKDIR /workspaces/robotic_arm/ros2_ws
+WORKDIR /workspaces/robotic_arm
 RUN colcon build --symlink-install 
 
-RUN echo "if [ -f ${WORKSPACE}/ros2_ws/install/setup.bash ]; then source ${WORKSPACE}/ros2_ws/install/setup.bash; fi" >> ~/.bashrc
+RUN echo "if [ -f ${WORKSPACE}/install/setup.bash ]; then source ${WORKSPACE}/install/setup.bash; fi" >> ~/.bashrc
 
 RUN apt-get update && apt-get -y dist-upgrade --no-install-recommends   
 

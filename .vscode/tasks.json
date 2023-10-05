@@ -6,7 +6,7 @@
         {
             "label": "ros2-launch-gazebo-gui",
             "type": "shell",
-            "command": "source ros2_ws/install/local_setup.bash && ros2 launch my_doosan_pkg my_doosan_gazebo_controller.launch.py headless:=False",
+            "command": "source install/local_setup.bash && ros2 launch my_doosan_pkg my_doosan_gazebo_controller.launch.py headless:=False",
             "problemMatcher": [],
             "dependsOn": [
                 "ros2-build"
@@ -15,7 +15,7 @@
         {
             "label": "ros2-launch-gazebo-headless",
             "type": "shell",
-            "command": "source ros2_ws/install/local_setup.bash && ros2 launch my_doosan_pkg my_doosan_gazebo_controller.launch.py headless:=True",
+            "command": "source install/local_setup.bash && ros2 launch my_doosan_pkg my_doosan_gazebo_controller.launch.py headless:=True",
             "problemMatcher": [],
             "dependsOn": [
                 "ros2-build"
@@ -24,7 +24,7 @@
         {
             "label": "ros2-launch-control",
             "type": "shell",
-            "command": "source ros2_ws/install/local_setup.bash && ros2 run my_doosan_pkg trajectory_points_act_server",
+            "command": "source install/local_setup.bash && ros2 run my_doosan_pkg trajectory_points_act_server",
             "problemMatcher": [],
             "dependsOn": [
                 "ros2-build"
@@ -33,13 +33,13 @@
         {
             "label": "ros2-build",
             "type": "shell",
-            "command": "cd ros2_ws && colcon build",
+            "command": "colcon build",
             "problemMatcher": []
         },
         {
             "label": "ros2-websocket",
             "type": "shell",
-            "command": "cd ros2_ws && ros2 launch rosbridge_server rosbridge_websocket_launch.xml",
+            "command": "ros2 launch rosbridge_server rosbridge_websocket_launch.xml",
             "problemMatcher": []
         }
     ]
