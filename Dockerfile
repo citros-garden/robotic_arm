@@ -64,23 +64,23 @@ RUN pip install numpy lark empy catkin_pkg
 RUN curl -sSL http://get.gazebosim.org | sh
 
 ARG USERNAME=dev
-ARG USER_UID=1000
+ARG USER_UID=999
 ARG USER_GID=$USER_UID
 
-# # create a non-root user
-# RUN groupadd --gid $USER_GID $USERNAME \
-#   && useradd -s /bin/bash --uid $USER_UID --gid $USER_GID -m $USERNAME \
-#   # [Optional] Add sudo support for the non-root user
-#   && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME\
-#   && chmod 0440 /etc/sudoers.d/$USERNAME \
-#   # Cleanup
-#   && rm -rf /var/lib/apt/lists/* \
-#   && echo "source /usr/share/bash-completion/completions/git" >> /home/$USERNAME/.bashrc
+# create a non-root user
+RUN groupadd --gid $USER_GID $USERNAME \
+  && useradd -s /bin/bash --uid $USER_UID --gid $USER_GID -m $USERNAME \
+  # [Optional] Add sudo support for the non-root user
+  && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME\
+  && chmod 0440 /etc/sudoers.d/$USERNAME \
+  # Cleanup
+  && rm -rf /var/lib/apt/lists/* \
+  && echo "source /usr/share/bash-completion/completions/git" >> ~/.bashrc
 
-# ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
-# RUN usermod -a -G video dev
-# RUN chown -R ${USERNAME}:${USERNAME} /usr/share/gazebo-11/
-# RUN echo "source /opt/ros/foxy/setup.bash" >> /home/$USERNAME/.bashrc
+ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+RUN usermod -a -G video dev
+RUN chown -R ${USERNAME}:${USERNAME} /usr/share/gazebo-11/
+RUN echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
 # define workspace
 WORKDIR /app
 
