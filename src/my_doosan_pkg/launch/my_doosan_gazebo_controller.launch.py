@@ -120,6 +120,6 @@ def generate_launch_description():
     #         				output='screen' 
 	# )
 
-	ld =  LaunchDescription([bridge_launch, setpoints, robot_state_publisher, spawn_entity_robot, gazebo_node, load_joint_state_broadcaster, load_joint_trajectory_controller, sys_shut_down  ])
+	ld =  LaunchDescription([bridge_launch,gazebo_node, setpoints, robot_state_publisher, spawn_entity_robot,  load_joint_state_broadcaster, load_joint_trajectory_controller, sys_shut_down  ])
 
 	return ld
