@@ -13,7 +13,7 @@ This example simulate [Doosan a0912](https://www.doosanrobotics.com/en/products/
 
 1. Clone this repository:
 
-        git clone git@github.com:lulav/citros_example_robotic_arm.git
+        git clone git@github.com:lulav/robotic_arm.git
 
 2. in VSCode, open the repository inside the devcontainer with: `open inside container`. All the installation process is automatic with the [install script](.devcontainer/install.sh) that runs after the dockerfile is being built.
 

@@ -103,9 +103,7 @@ def generate_launch_description():
 										output='screen')
 
 	bridge_dir = get_package_share_directory('rosbridge_server')
-	included_launch = IncludeLaunchDescription(
-        launch_description_sources.FrontendLaunchDescriptionSource(
-                bridge_dir + '/launch/rosbridge_websocket_launch.xml'))
+	bridge_launch =  IncludeLaunchDescription(launch_description_sources.FrontendLaunchDescriptionSource(bridge_dir + '/launch/rosbridge_websocket_launch.xml')) 
 
 	
 	sys_shut_down = RegisterEventHandler(OnProcessExit(
@@ -122,6 +120,6 @@ def generate_launch_description():
     #         				output='screen' 
 	# )
 
-	ld =  LaunchDescription([setpoints, robot_state_publisher, spawn_entity_robot, gazebo_node, load_joint_state_broadcaster, load_joint_trajectory_controller, included_launch, sys_shut_down  ])
+	ld =  LaunchDescription([bridge_launch, setpoints, robot_state_publisher, spawn_entity_robot, gazebo_node, load_joint_state_broadcaster, load_joint_trajectory_controller, sys_shut_down  ])
 
 	return ld
