@@ -134,6 +134,9 @@ RUN . /opt/ros/${ROS_DISTRO}/setup.sh
 WORKDIR /workspaces/robotic_arm
 RUN colcon build --symlink-install 
 
+RUN pip install --no-cache-dir --upgrade pip \
+  && pip install --no-cache-dir  citros
+
 RUN echo "if [ -f ${WORKSPACE}/install/setup.bash ]; then source ${WORKSPACE}/install/setup.bash; fi" >> ~/.bashrc
 
 RUN apt-get update && apt-get -y dist-upgrade --no-install-recommends   
