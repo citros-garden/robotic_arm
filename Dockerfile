@@ -1,6 +1,6 @@
 FROM althack/ros2:foxy-gazebo-nvidia
 
-ENV ROS_DISTRO ${ROS_DISTRO}
+ENV ROS_DISTRO foxy
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -75,12 +75,12 @@ RUN groupadd --gid $USER_GID $USERNAME \
   && chmod 0440 /etc/sudoers.d/$USERNAME \
   # Cleanup
   && rm -rf /var/lib/apt/lists/* \
-  && echo "source /usr/share/bash-completion/completions/git" >> ~/.bashrc
+  && echo "source /usr/share/bash-completion/completions/git" >> /home/$USERNAME/.bashrc
 
 ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 RUN usermod -a -G video dev
 RUN chown -R ${USERNAME}:${USERNAME} /usr/share/gazebo-11/
-RUN echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
+RUN echo "source /opt/ros/foxy/setup.bash" >> /home/$USERNAME/.bashrc
 # define workspace
 WORKDIR /app
 
@@ -92,29 +92,7 @@ RUN cd libfranka && mkdir build && cd build && \
     cpack -G DEB && \
     dpkg -i libfranka*.deb
 
-RUN sudo apt-get update && apt-get install -y \
-    ros-$ROS_DISTRO-rosbag2-storage-mcap \
-    ros-$ROS_DISTRO-rosbag2 \
-    ros-$ROS_DISTRO-ros-base \
-    ros-$ROS_DISTRO-ros2bag \
-    ros-$ROS_DISTRO-rosbag2-transport \
-    ros-${ROS_DISTRO}-rosbridge-suite \  
-    && rm -rf /var/lib/apt/lists/* 
-
-RUN apt-get update \
-   && apt-get -y install --no-install-recommends ros-${ROS_DISTRO}-gazebo-*\
-   ros-${ROS_DISTRO}-cartographer \
-   ros-${ROS_DISTRO}-cartographer-ros \
-   ros-${ROS_DISTRO}-navigation2 \
-   ros-${ROS_DISTRO}-nav2-bringup \
-   ros-${ROS_DISTRO}-dynamixel-sdk \
-   #
-   # Clean up
-   && apt-get autoremove -y \
-   && apt-get clean -y \
-   && rm -rf /var/lib/apt/lists/*
-
-RUN echo "RCUTILS_COLORIZED_OUTPUT=1" >> ~/.bashrc
+RUN echo "RCUTILS_COLORIZED_OUTPUT=1" >> /home/$USERNAME/.bashrc
 
 RUN apt-get update && apt-get install -y \
     python3-vcstool \
@@ -145,7 +123,7 @@ RUN pip install --upgrade urllib3  \
   && pip install --upgrade requests  \
   && pip install --upgrade zipp 
 
-RUN echo "if [ -f ${WORKSPACE}/install/setup.bash ]; then source ${WORKSPACE}/install/setup.bash; fi" >> ~/.bashrc
+RUN echo "if [ -f ${WORKSPACE}/install/setup.bash ]; then source ${WORKSPACE}/install/setup.bash; fi" >> /home/$USERNAME/.bashrc
 
 RUN apt-get update && apt-get -y dist-upgrade --no-install-recommends   
 
