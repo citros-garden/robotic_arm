@@ -46,6 +46,7 @@ RUN apt-get update && apt-get install -y \
   ros-foxy-rmw-cyclonedds-cpp \
   libpoco-dev \
   libeigen3-dev \
+  python3-vcstool \
   ros-foxy-control-msgs \
   ros-foxy-xacro \
   ros-foxy-angles \
@@ -57,10 +58,16 @@ RUN apt-get update && apt-get install -y \
   ros-foxy-joint-state-publisher \
   ros-foxy-joint-state-publisher-gui \
   ros-foxy-ament-cmake-clang-format \
+  ros-foxy-test-msgs \
+  ros-foxy-gazebo-ros-pkgs \
   python3-colcon-common-extensions \
+  ros-foxy-rosbridge-suite \
+  dist-upgrade \
   && rm -rf /var/lib/apt/lists/* 
 
-RUN pip install numpy lark empy catkin_pkg
+RUN pip install --no-cache-dir --upgrade pip \
+  && pip install --no-cache-dir -- upgrade citros urllib3 requests zipp numpy lark empy catkin_pkg ikpy
+
 RUN curl -sSL http://get.gazebosim.org | sh
 
 ARG USERNAME=dev
@@ -81,6 +88,7 @@ ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 RUN usermod -a -G video dev
 RUN chown -R ${USERNAME}:${USERNAME} /usr/share/gazebo-11/
 RUN echo "source /opt/ros/foxy/setup.bash" >> /home/$USERNAME/.bashrc
+
 # define workspace
 WORKDIR /app
 
@@ -94,40 +102,13 @@ RUN cd libfranka && mkdir build && cd build && \
 
 RUN echo "RCUTILS_COLORIZED_OUTPUT=1" >> /home/$USERNAME/.bashrc
 
-RUN apt-get update && apt-get install -y \
-    python3-vcstool \
-    ros-foxy-test-msgs \
-    ros-foxy-gazebo-ros-pkgs
-
-RUN pip install ikpy
-
-# download rosbridge for Foxglove monitoring
-RUN apt update && apt-get install -y ros-foxy-rosbridge-suite
-
 WORKDIR /workspaces/robotic_arm
 
 COPY . .
 
-RUN . /opt/ros/${ROS_DISTRO}/setup.sh
-WORKDIR /workspaces/robotic_arm
-RUN colcon build --symlink-install 
-
-RUN pip install --no-cache-dir --upgrade pip \
-  && pip install --no-cache-dir  citros
-
-RUN pip install --no-cache-dir urllib3  \
-  && pip install --no-cache-dir requests  \
-  && pip install --no-cache-dir zipp 
-
-RUN pip install --upgrade urllib3  \
-  && pip install --upgrade requests  \
-  && pip install --upgrade zipp 
+RUN . /opt/ros/${ROS_DISTRO}/setup.sh && colcon build --symlink-install 
 
 RUN echo "if [ -f ${WORKSPACE}/install/setup.bash ]; then source ${WORKSPACE}/install/setup.bash; fi" >> /home/$USERNAME/.bashrc
-
-RUN apt-get update && apt-get -y dist-upgrade --no-install-recommends   
-
-WORKDIR /workspaces/robotic_arm
 
 RUN chmod +x ros2_entrypoint.sh
 ENTRYPOINT ["/workspaces/robotic_arm/ros2_entrypoint.sh"]
