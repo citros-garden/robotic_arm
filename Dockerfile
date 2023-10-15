@@ -62,7 +62,6 @@ RUN apt-get update && apt-get install -y \
   ros-foxy-gazebo-ros-pkgs \
   python3-colcon-common-extensions \
   ros-foxy-rosbridge-suite \
-  dist-upgrade \
   && rm -rf /var/lib/apt/lists/* 
 
 RUN pip install --no-cache-dir --upgrade pip \
