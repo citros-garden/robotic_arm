@@ -77,7 +77,7 @@ RUN groupadd --gid $USER_GID $USERNAME \
   && rm -rf /var/lib/apt/lists/* \
   && echo "source /usr/share/bash-completion/completions/git" >> /home/$USERNAME/.bashrc
 
-# ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 RUN usermod -a -G video dev
 RUN chown -R ${USERNAME}:${USERNAME} /usr/share/gazebo-11/
 RUN echo "source /opt/ros/foxy/setup.bash" >> /home/$USERNAME/.bashrc

@@ -84,7 +84,7 @@ RUN groupadd --gid $USER_GID $USERNAME \
   && rm -rf /var/lib/apt/lists/* \
   && echo "source /usr/share/bash-completion/completions/git" >> /home/$USERNAME/.bashrc
 
-ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+# ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 RUN usermod -a -G video dev
 RUN chown -R ${USERNAME}:${USERNAME} /usr/share/gazebo-11/
 RUN echo "source /opt/ros/foxy/setup.bash" >> /home/$USERNAME/.bashrc
@@ -103,12 +103,12 @@ RUN cd libfranka && mkdir build && cd build && \
 RUN echo "RCUTILS_COLORIZED_OUTPUT=1" >> /home/$USERNAME/.bashrc
 
 WORKDIR /workspaces/robotic_arm
-
 COPY . .
 
 RUN . /opt/ros/${ROS_DISTRO}/setup.sh && colcon build --symlink-install 
-
 RUN echo "if [ -f ${WORKSPACE}/install/setup.bash ]; then source ${WORKSPACE}/install/setup.bash; fi" >> /home/$USERNAME/.bashrc
+
+RUN apt-get update && apt-get -y dist-upgrade --no-install-recommends
 
 RUN chmod +x ros2_entrypoint.sh
 ENTRYPOINT ["/workspaces/robotic_arm/ros2_entrypoint.sh"]
