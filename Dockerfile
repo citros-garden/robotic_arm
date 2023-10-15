@@ -65,7 +65,7 @@ RUN apt-get update && apt-get install -y \
   && rm -rf /var/lib/apt/lists/* 
 
 RUN pip install --no-cache-dir --upgrade pip \
-  && pip install --no-cache-dir -- upgrade citros urllib3 requests zipp numpy lark empy catkin_pkg ikpy
+  && pip install --no-cache-dir --upgrade citros urllib3 requests zipp numpy lark empy catkin_pkg ikpy
 
 RUN curl -sSL http://get.gazebosim.org | sh
 
