@@ -1,10 +1,10 @@
-FROM ros:foxy
+FROM althack/ros2:foxy-gazebo-nvidia
 
 ENV ROS_DISTRO foxy
 
-# install utils
 ENV DEBIAN_FRONTEND=noninteractive
 
+# install utils
 RUN apt-get update && apt-get install -y \
   bash-completion \
   build-essential \
@@ -46,6 +46,7 @@ RUN apt-get update && apt-get install -y \
   ros-foxy-rmw-cyclonedds-cpp \
   libpoco-dev \
   libeigen3-dev \
+  python3-vcstool \
   ros-foxy-control-msgs \
   ros-foxy-xacro \
   ros-foxy-angles \
@@ -57,30 +58,33 @@ RUN apt-get update && apt-get install -y \
   ros-foxy-joint-state-publisher \
   ros-foxy-joint-state-publisher-gui \
   ros-foxy-ament-cmake-clang-format \
+  ros-foxy-test-msgs \
+  ros-foxy-gazebo-ros-pkgs \
   python3-colcon-common-extensions \
+  ros-foxy-rosbridge-suite \
   && rm -rf /var/lib/apt/lists/* 
 
-RUN pip install numpy lark empy catkin_pkg
+RUN pip install --no-cache-dir --upgrade pip \
+  && pip install --no-cache-dir --upgrade citros urllib3 requests zipp numpy lark empy catkin_pkg ikpy
+
 RUN curl -sSL http://get.gazebosim.org | sh
 
-ARG USERNAME=dev
-ARG USER_UID=1000
+ARG USERNAME=ros
+ARG USER_UID=999
 ARG USER_GID=$USER_UID
 
 # create a non-root user
-RUN groupadd --gid $USER_GID $USERNAME \
-  && useradd -s /bin/bash --uid $USER_UID --gid $USER_GID -m $USERNAME \
-  # [Optional] Add sudo support for the non-root user
-  && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME\
+RUN echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME\
   && chmod 0440 /etc/sudoers.d/$USERNAME \
   # Cleanup
   && rm -rf /var/lib/apt/lists/* \
   && echo "source /usr/share/bash-completion/completions/git" >> /home/$USERNAME/.bashrc
 
-ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
-RUN usermod -a -G video dev
+# ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+RUN usermod -a -G video $USERNAME
 RUN chown -R ${USERNAME}:${USERNAME} /usr/share/gazebo-11/
 RUN echo "source /opt/ros/foxy/setup.bash" >> /home/$USERNAME/.bashrc
+
 # define workspace
 WORKDIR /app
 
@@ -94,15 +98,15 @@ RUN cd libfranka && mkdir build && cd build && \
 
 RUN echo "RCUTILS_COLORIZED_OUTPUT=1" >> /home/$USERNAME/.bashrc
 
-RUN apt-get update && apt-get install -y \
-    python3-vcstool \
-    ros-foxy-test-msgs \
-    ros-foxy-gazebo-ros-pkgs
+WORKDIR /workspaces/robotic_arm
+COPY . .
 
-RUN pip install ikpy
+RUN . /opt/ros/${ROS_DISTRO}/setup.sh && colcon build --symlink-install 
+RUN echo "if [ -f ${WORKSPACE}/install/setup.bash ]; then source ${WORKSPACE}/install/setup.bash; fi" >> /home/$USERNAME/.bashrc
 
-# download rosbridge for Foxglove monitoring
-RUN apt update && apt-get install -y ros-foxy-rosbridge-suite
+RUN apt-get update && apt-get -y dist-upgrade --no-install-recommends
 
-WORKDIR /
-RUN echo "if [ -f ${WORKSPACE}/install/setup.bash ]; then source ${WORKSPACE}/install/setup.bash; fi" >> ~/.bashrc
+RUN chmod +x ros2_entrypoint.sh
+ENTRYPOINT ["/workspaces/robotic_arm/ros2_entrypoint.sh"]
+
+CMD ["bash"]

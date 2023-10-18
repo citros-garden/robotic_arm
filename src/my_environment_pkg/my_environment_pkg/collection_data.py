@@ -26,7 +26,7 @@ next_state_vector = []
 reward_vector = []
 action_vectors = []
 
-store_path = '/home/david/ros2_ws/src/robotic_arm_environment/data/'
+store_path = '/home/david/src/robotic_arm_environment/data/'
 
 
 def write_data_function(path, st, act, st_1, rew):

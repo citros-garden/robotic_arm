@@ -12,14 +12,14 @@ RUN apt-get update && apt-get install -q -y --no-install-recommends \
     python3-colcon-ros \
     && apt-get clean
 
-RUN mkdir -p /home/ros2_ws/src \
-    && cd /home/ros2_ws/src/ \
+RUN mkdir -p /home/src \
+    && cd /home/src/ \
     && git clone https://github.com/ros-simulation/gazebo_ros2_control -b foxy \
     && rosdep update \
     && rosdep install --from-paths ./ -i -y --rosdistro foxy \
       --ignore-src
 
-RUN cd /home/ros2_ws/ \
+RUN cd /home/ \
   && . /opt/ros/foxy/setup.sh \
   && colcon build --merge-install
 
