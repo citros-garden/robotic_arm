@@ -5,9 +5,12 @@ The robotic arm model and configuration was imported from [this](https://github.
 
 ![png](docs/img/readme.png)
 
+![image](ros2_ws/src/images/readme.png)
+
 # About the example
 
 This example simulate [Doosan a0912](https://www.doosanrobotics.com/en/products/series/a0912) robotics arm in ROS2-Gazebo environment. 
+
 
 ![gif](docs/img/doosan.gif)
 
@@ -23,11 +26,13 @@ All project installation and usage information also available in the project [Gi
 git clone git@github.com:citros-garden/robotic_arm.git
 ```
 
+
 ### Build
 1. Open project root folder in VS Code.
 2. Navigate to the lower-left corner of VS Code window and click on green mark.
 3. Select "Reopen in container" option in the list on the top of the VS Code window. Wait a minute while Docker container is starting.
 2. Open ```/src/my_doosan_pkg/config/params.yaml``` (for Forward Kinematic) or ```/src/inverse_kinematic_pkg/config/params.yaml``` (for Inverse Kinematic) file to set parameters for simulation or just keep it default. Don't forget to save your changes!
+
 3. Build ROS 2 environment:
 ```bash 
 colcon build
@@ -37,7 +42,9 @@ colcon build
 source install/local_setup.bash
 ```
 
+
 ### Preparing FoxGlove Studio
+
 FoxGlove Studio is a robotics visualization and debugging tool, which can connect to ROS topic and get the data publishing through it. We will use it to visualizate the results of our simulations.
 
 First of all, you need to download it from the [official website](https://foxglove.dev/) and install following the instructions. 
@@ -45,6 +52,7 @@ First of all, you need to download it from the [official website](https://foxglo
 Next step is connecting to your ROS node. To perform it, open FoxGlove Studio and select *__Open connection__* option, then select *__Rosbridge__* option. Check the *__WebSocket URL__* field on the right of the window, it should contain ```ws://localhost:9090```. Now we are almost ready to go!
 
 The Robotic Arm simulation has a number of publishers: joints position, effort and velocity, images from cameras etc. You can set your FoxGlove layout setup up using this table:
+
 
 |Topic name	|Message type	|Description
 |--|--|--
@@ -67,6 +75,7 @@ You can use prepared layout: Go to the ```Layout``` tab on the top panel, then c
 
 
 
+
 ### Run
 1. Go back to the VS Code.
 3. Launch ROS 2 package:
@@ -82,6 +91,7 @@ For Inverse kinematic:
 ros2 launch inverse_kinematic_pkg inverse_kinematic_pkg.launch.py headless:=False
 ```
 For headless launch just replace False flag with True.
+
 
 4. Watch the FoxGlove plot built from results!
 
