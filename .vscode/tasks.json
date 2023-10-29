@@ -4,7 +4,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "ros2-launch-gazebo-gui",
+            "label": "ros2-launch-gui-FK",
             "type": "shell",
             "command": "source install/local_setup.bash && ros2 launch my_doosan_pkg my_doosan_gazebo_controller.launch.py headless:=False",
             "problemMatcher": [],
@@ -13,9 +13,27 @@
             ]
         },
         {
-            "label": "ros2-launch-gazebo-headless",
+            "label": "ros2-launch-headless-FK",
             "type": "shell",
             "command": "source install/local_setup.bash && ros2 launch my_doosan_pkg my_doosan_gazebo_controller.launch.py headless:=True",
+            "problemMatcher": [],
+            "dependsOn": [
+                "ros2-build"
+            ]
+        },
+        {
+            "label": "ros2-launch-gui-IK",
+            "type": "shell",
+            "command": "source install/local_setup.bash && ros2 launch inverse_kinematic_pkg inverse_kinematic_pkg.launch.py headless:=False",
+            "problemMatcher": [],
+            "dependsOn": [
+                "ros2-build"
+            ]
+        },
+        {
+            "label": "ros2-launch-headless-IK",
+            "type": "shell",
+            "command": "source install/local_setup.bash && ros2 launch inverse_kinematic_pkg inverse_kinematic_pkg.launch.py headless:=True",
             "problemMatcher": [],
             "dependsOn": [
                 "ros2-build"

@@ -1,0 +1,8 @@
+inverse_kinematic_pkg:
+  ros__parameters:
+    pos0: -0.8
+    pos1: 0.8
+    pos2: 0.3
+    ori0: -0.102
+    ori1: 1.57
+    ori3: -0.686
