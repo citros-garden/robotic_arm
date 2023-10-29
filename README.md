@@ -3,7 +3,7 @@
 This repository contains a robotic arm example for CITROS integration.
 The robotic arm model and configuration was imported from [this](https://github.com/dvalenciar/robotic_arm_environment) Github project. In addition, the Inverse Kinematic ROS node was added.
 
-![image](docs/img/readme.png)
+![png](docs/img/readme.png)
 
 # About the example
 
@@ -11,11 +11,11 @@ This example simulate [Doosan a0912](https://www.doosanrobotics.com/en/products/
 
 ![gif](docs/img/doosan.gif)
 
-## Local Usage 💻
+## Local Usage
 
 All project installation and usage information also available in the project [GitHub page](git@github.com:citros-garden/robotic_arm.git).
 
-### Installation 🔨
+### Installation
 1. Docker engine. This project runs inside Docker container, and requires Docker Engine/Docker Desktop. Follow the instructions on [Docker official website](https://www.docker.com/get-started/).
 2. To use Docker inside VS Code several extensions are required. Install [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) and [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) extensions from Extensions tab on your left control panel.
 3. Clone the repository:
@@ -23,7 +23,7 @@ All project installation and usage information also available in the project [Gi
 git clone git@github.com:citros-garden/robotic_arm.git
 ```
 
-### Build 🏠
+### Build
 1. Open project root folder in VS Code.
 2. Navigate to the lower-left corner of VS Code window and click on green mark.
 3. Select "Reopen in container" option in the list on the top of the VS Code window. Wait a minute while Docker container is starting.
@@ -37,7 +37,7 @@ colcon build
 source install/local_setup.bash
 ```
 
-### Preparing FoxGlove Studio 🪄
+### Preparing FoxGlove Studio
 FoxGlove Studio is a robotics visualization and debugging tool, which can connect to ROS topic and get the data publishing through it. We will use it to visualizate the results of our simulations.
 
 First of all, you need to download it from the [official website](https://foxglove.dev/) and install following the instructions. 
@@ -67,7 +67,7 @@ You can use prepared layout: Go to the ```Layout``` tab on the top panel, then c
 
 
 
-### Run 🚀
+### Run
 1. Go back to the VS Code.
 3. Launch ROS 2 package:
 The project has 2 nodes (FK and IK) and each of them could be launched with Gazebo GUI or without.
@@ -91,14 +91,14 @@ You can use Visual Code Tasks: simply press ```Alt+T``` and select ```Launch_emp
 
 ![png](docs/img/foxglove0.png "FoxGlove example")
 
-## CITROS usage 🛸
+## CITROS usage
 Although you can get simulation results using FoxGlove, the best way to work with such simulations and process the results is CITROS! With its power, it is possible to create complex data processing scenarios, including the construction of more complex graphs, mathematical analysis and other high-level processing methods.
 
-### CITROS installation 🛫
+### CITROS installation
 
 First of all, to use all the powerfull CITROS features usage requires CITROS installation: follow the instructions on the CITROS CLI [GitHub page](https://github.com/lulav/citros_cli).
 
-### Configuring the project ⚙️
+### Configuring the project
 After all the prerequisites done, we can start configuring our project. The starting point is the Lunar_Starship devcontainer loaded and running, CITROS CLI is installed and ready.
 1. Initialize CITROS:
 ```bash 
@@ -134,13 +134,13 @@ For Inverse Kinematic:
 
 Don't forget to save the file!
 
-### Syncing the project's setup 📡
+### Syncing the project's setup
 Now we can sync our project settings with CITROS server:
 ```bash 
 citros commit
 citros push
 ```
-### Running locally 🛋️
+### Running locally
 Since all the preparations done, we can launch it locally (your project should be built and sourced before that, check the instructions above):
 ```bash 
 citros run -n 'robotic_arm' -m 'local test run'
@@ -159,7 +159,7 @@ citros run -n 'robotic_arm' -m 'cloud test run' -r
 ```
 Select the launch file (```simulation_my_doosan_gazebo_controller``` for Forward Kinematic or ```simulation_inverse_kinematic_pkg``` for Inverse Kinematic) by pressing ```Enter``` button. Now the simulation is running in the CITROS server, and it will upload results to the CITROS database automaticly.
 
-### CITROS Web usage and data analysis 🌌
+### CITROS Web usage and data analysis
 #### Launching project via CITROS Web
 The best way to use all the innovative capabilities of CITROS is through it's Web interface. The following manual explains how to run this project in the cloud and how to process the simualtion results.
 The starting point is CITROS main page, user is logged in and the project Docker image is built and pushed to the cloud (see the [manual](#uploading-docker-image-to-the-citros-database-and-running-in-the-cloud-🛰️) above).
