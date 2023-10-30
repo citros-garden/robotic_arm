@@ -97,7 +97,7 @@ For headless launch just replace False flag with True.
 
 OR
 
-You can use Visual Code Tasks: simply press ```Alt+T``` and select ```Launch_empty``` task to build, source and launch the project automaticly.
+You can use Visual Code Tasks: simply press ```Alt+T``` and select the necessary task to build, source and launch the project automaticly.
 
 ![png](docs/img/foxglove0.png "FoxGlove example")
 
