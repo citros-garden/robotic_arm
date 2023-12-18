@@ -1,12 +1,5 @@
 {
   "configById": {
-    "RawMessages!3ate7dh": {
-      "diffEnabled": false,
-      "diffMethod": "custom",
-      "diffTopicPath": "",
-      "showFullMessageForDiff": false,
-      "topicPath": "/joint_trajectory_controller/joint_trajectory"
-    },
     "Plot!2kt1jyo": {
       "paths": [
         {
@@ -43,13 +36,8 @@
     "speed": 1
   },
   "layout": {
-    "first": "RawMessages!3ate7dh",
-    "second": {
-      "first": "Plot!2kt1jyo",
-      "second": "RawMessages!29q6432",
-      "direction": "column"
-    },
-    "direction": "row",
-    "splitPercentage": 36.322725099015365
+    "first": "Plot!2kt1jyo",
+    "second": "RawMessages!29q6432",
+    "direction": "column"
   }
 }

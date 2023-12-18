@@ -102,7 +102,7 @@ RUN apt-get update && apt-get install -y \
 RUN pip install ikpy
 
 # download rosbridge for Foxglove monitoring
-RUN apt update && apt-get install -y ros-foxy-rosbridge-suite
+RUN apt update && apt-get install -y ros-foxy-rosbridge-suite ros-foxy-rosbag2-storage-mcap
 
 WORKDIR /
 RUN echo "if [ -f ${WORKSPACE}/install/setup.bash ]; then source ${WORKSPACE}/install/setup.bash; fi" >> ~/.bashrc
