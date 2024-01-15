@@ -1,0 +1,14 @@
+{
+    "CPU": 4,
+    "GPU": 4,
+    "MEM": 4096,
+    "description": "Default simulation. Change the values according to your needs.",
+    "id": "8d26c814-489f-49e4-ab75-fe1c4b09e9b6",
+    "launch": {
+        "file": "my_doosan_gazebo_controller.launch.py",
+        "package": "my_doosan_pkg"
+    },
+    "parameter_setup": "default_param_setup.json",
+    "storage_type": "MCAP",
+    "timeout": 300
+}

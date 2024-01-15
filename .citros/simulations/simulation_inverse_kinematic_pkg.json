@@ -1,0 +1,14 @@
+{
+    "CPU": 4,
+    "GPU": 4,
+    "MEM": 4096,
+    "description": "Default simulation. Change the values according to your needs.",
+    "id": "1fe3c230-9af5-46ce-bbde-a31e52c37454",
+    "launch": {
+        "file": "inverse_kinematic_pkg.launch.py",
+        "package": "inverse_kinematic_pkg"
+    },
+    "parameter_setup": "default_param_setup.json",
+    "storage_type": "MCAP",
+    "timeout": 300
+}

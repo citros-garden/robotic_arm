@@ -1,0 +1,267 @@
+{
+    "citros_cli_version": "0.1.7",
+    "cover": "",
+    "description": "",
+    "git": "git@github.com:citros-garden/robotic_arm.git",
+    "is_active": true,
+    "launches": [],
+    "packages": [
+        {
+            "cover": "",
+            "description": "\n    control_msgs contains base messages and actions useful for\n    controlling robots.  It provides representations for controller\n    setpoints and joint and cartesian trajectories.\n  ",
+            "git": "",
+            "launches": [],
+            "maintainer": "Bence Magyar",
+            "maintainer_email": "bence.magyar.robotics@gmail.com",
+            "name": "control_msgs",
+            "nodes": [],
+            "package_xml": "src/control_msgs/package.xml",
+            "parameters": {},
+            "path": "src/control_msgs",
+            "setup_py": ""
+        },
+        {
+            "cover": "",
+            "description": "gazebo_ros2_control",
+            "git": "",
+            "launches": [],
+            "maintainer": "Alejandro Hernandez",
+            "maintainer_email": "alejandro@osrfoundation.org",
+            "name": "gazebo_ros2_control",
+            "nodes": [
+                {
+                    "entry_point": "",
+                    "name": "gazebo_ros2_control",
+                    "parameters": [],
+                    "path": ""
+                },
+                {
+                    "entry_point": "",
+                    "name": "gazebo_hardware_plugins",
+                    "parameters": [],
+                    "path": ""
+                }
+            ],
+            "package_xml": "src/gazebo_ros2_control/package.xml",
+            "parameters": {},
+            "path": "src/gazebo_ros2_control",
+            "setup_py": ""
+        },
+        {
+            "cover": "",
+            "description": "TODO: Package description",
+            "git": "",
+            "launches": [
+                {
+                    "description": "",
+                    "name": "inverse_kinematic_pkg.launch.py",
+                    "path": "src/inverse_kinematic_pkg/launch/inverse_kinematic_pkg.launch.py"
+                }
+            ],
+            "maintainer": "david",
+            "maintainer_email": "david@todo.todo",
+            "name": "inverse_kinematic_pkg",
+            "nodes": [
+                {
+                    "entry_point": "my_doosan_pkg.joint_points_topic:main",
+                    "name": "trajectory_points_topic",
+                    "parameters": [],
+                    "path": "src/inverse_kinematic_pkg/inverse_kinematic_pkg/joint_points_topic.py"
+                },
+                {
+                    "entry_point": "inverse_kinematic_pkg.inverse_kinematic_pkg:main",
+                    "name": "inverse_kinematic_pkg",
+                    "parameters": [
+                        {
+                            "description": "Parameter loaded from config.yaml",
+                            "name": "pos0",
+                            "parameterType": "float",
+                            "value": -0.8
+                        },
+                        {
+                            "description": "Parameter loaded from config.yaml",
+                            "name": "pos1",
+                            "parameterType": "float",
+                            "value": 0.8
+                        },
+                        {
+                            "description": "Parameter loaded from config.yaml",
+                            "name": "pos2",
+                            "parameterType": "float",
+                            "value": 0.3
+                        },
+                        {
+                            "description": "Parameter loaded from config.yaml",
+                            "name": "ori0",
+                            "parameterType": "float",
+                            "value": -0.102
+                        },
+                        {
+                            "description": "Parameter loaded from config.yaml",
+                            "name": "ori1",
+                            "parameterType": "float",
+                            "value": 1.57
+                        },
+                        {
+                            "description": "Parameter loaded from config.yaml",
+                            "name": "ori3",
+                            "parameterType": "float",
+                            "value": -0.686
+                        }
+                    ],
+                    "path": "src/inverse_kinematic_pkg/inverse_kinematic_pkg/inverse_kinematic_pkg.py"
+                }
+            ],
+            "package_xml": "src/inverse_kinematic_pkg/package.xml",
+            "parameters": {},
+            "path": "src/inverse_kinematic_pkg",
+            "setup_py": "src/inverse_kinematic_pkg/setup.py"
+        },
+        {
+            "cover": "",
+            "description": "TODO: Package description",
+            "git": "",
+            "launches": [
+                {
+                    "description": "",
+                    "name": "my_doosan_gazebo_controller.launch.py",
+                    "path": "src/my_doosan_pkg/launch/my_doosan_gazebo_controller.launch.py"
+                }
+            ],
+            "maintainer": "david",
+            "maintainer_email": "david@todo.todo",
+            "name": "my_doosan_pkg",
+            "nodes": [
+                {
+                    "entry_point": "my_doosan_pkg.joint_points_topic:main",
+                    "name": "trajectory_points_topic",
+                    "parameters": [],
+                    "path": "src/my_doosan_pkg/my_doosan_pkg/joint_points_topic.py"
+                },
+                {
+                    "entry_point": "my_doosan_pkg.joint_points_act_service:main",
+                    "name": "trajectory_points_act_server",
+                    "parameters": [
+                        {
+                            "description": "Parameter loaded from config.yaml",
+                            "name": "j0",
+                            "parameterType": "float",
+                            "value": -0.8
+                        },
+                        {
+                            "description": "Parameter loaded from config.yaml",
+                            "name": "j1",
+                            "parameterType": "float",
+                            "value": 0.2
+                        },
+                        {
+                            "description": "Parameter loaded from config.yaml",
+                            "name": "j2",
+                            "parameterType": "float",
+                            "value": 0.75
+                        },
+                        {
+                            "description": "Parameter loaded from config.yaml",
+                            "name": "j3",
+                            "parameterType": "float",
+                            "value": -0.102
+                        },
+                        {
+                            "description": "Parameter loaded from config.yaml",
+                            "name": "j4",
+                            "parameterType": "float",
+                            "value": 1.57
+                        },
+                        {
+                            "description": "Parameter loaded from config.yaml",
+                            "name": "j5",
+                            "parameterType": "float",
+                            "value": -0.686
+                        }
+                    ],
+                    "path": "src/my_doosan_pkg/my_doosan_pkg/joint_points_act_service.py"
+                }
+            ],
+            "package_xml": "src/my_doosan_pkg/package.xml",
+            "parameters": {},
+            "path": "src/my_doosan_pkg",
+            "setup_py": "src/my_doosan_pkg/setup.py"
+        },
+        {
+            "cover": "",
+            "description": "TODO: Package description",
+            "git": "",
+            "launches": [],
+            "maintainer": "david",
+            "maintainer_email": "david@todo.todo",
+            "name": "my_environment_pkg",
+            "nodes": [
+                {
+                    "entry_point": "my_environment_pkg.run_environment:main",
+                    "name": "run_environment",
+                    "parameters": [],
+                    "path": "src/my_environment_pkg/my_environment_pkg/run_environment.py"
+                },
+                {
+                    "entry_point": "my_environment_pkg.collection_data:main",
+                    "name": "data_collection",
+                    "parameters": [],
+                    "path": "src/my_environment_pkg/my_environment_pkg/collection_data.py"
+                }
+            ],
+            "package_xml": "src/my_environment_pkg/package.xml",
+            "parameters": {},
+            "path": "src/my_environment_pkg",
+            "setup_py": "src/my_environment_pkg/setup.py"
+        },
+        {
+            "cover": "",
+            "description": "TODO: Package description",
+            "git": "",
+            "launches": [],
+            "maintainer": "david",
+            "maintainer_email": "david@todo.todo",
+            "name": "my_sphere_pkg",
+            "nodes": [
+                {
+                    "entry_point": "my_sphere_pkg.coordinate_node:main",
+                    "name": "reader_mark_node",
+                    "parameters": [],
+                    "path": "src/my_sphere_pkg/my_sphere_pkg/coordinate_node.py"
+                },
+                {
+                    "entry_point": "my_sphere_pkg.client_node:main",
+                    "name": "my_client_node",
+                    "parameters": [],
+                    "path": "src/my_sphere_pkg/my_sphere_pkg/client_node.py"
+                }
+            ],
+            "package_xml": "src/my_sphere_pkg/package.xml",
+            "parameters": {},
+            "path": "src/my_sphere_pkg",
+            "setup_py": "src/my_sphere_pkg/setup.py"
+        },
+        {
+            "cover": "",
+            "description": "Contains a set of tools that can be used from a hard\n    realtime thread, without breaking the realtime behavior.",
+            "git": "",
+            "launches": [],
+            "maintainer": "Bence Magyar",
+            "maintainer_email": "bence.magyar.robotics@gmail.com",
+            "name": "realtime_tools",
+            "nodes": [
+                {
+                    "entry_point": "",
+                    "name": "realtime_tools",
+                    "parameters": [],
+                    "path": ""
+                }
+            ],
+            "package_xml": "src/realtime_tools/package.xml",
+            "parameters": {},
+            "path": "src/realtime_tools",
+            "setup_py": ""
+        }
+    ],
+    "tags": []
+}
